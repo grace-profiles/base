@@ -1,5 +1,5 @@
-# Grails Base Profile
+# Grace Base Profile
 
-[![Build Status](https://travis-ci.org/grails-profiles/base.svg?branch=master)](https://travis-ci.org/grails-profiles/base)
+[![Build Status](https://github.com/grace-profiles/base/workflows/Grace%20CI/badge.svg)](https://github.com/grace-profiles/base/actions)
 
 A profile for other profiles to extend from
