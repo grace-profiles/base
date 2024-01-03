@@ -3,17 +3,16 @@ skeleton:
     executable: ["**/gradlew*", "**/grailsw*"]
     binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
 repositories:
-    - "https://repo.grails.org/grails/core"
+    - "mavenCentral()"
 build:
     repositories:
-        - "https://repo.grails.org/grails/core"
+        - "mavenCentral()"
     plugins:
         - eclipse
         - idea
-        - org.grails.grails-core
 dependencies:
     - scope: build
-      coords: "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
+      coords: "org.graceframework:grace-gradle-plugin:$graceVersion"
     - scope: compileOnly
       coords: "io.micronaut:micronaut-inject-groovy"
     - scope: compile
@@ -23,12 +22,12 @@ dependencies:
     - scope: compile
       coords: "org.springframework.boot:spring-boot-autoconfigure"
     - scope: compile
-      coords: "org.grails:grails-core"
+      coords: "org.graceframework:grace-core"
     - scope: testCompile
       coords: "io.micronaut:micronaut-inject-groovy"
     - scope: testCompile
-      coords: "org.grails:grails-gorm-testing-support"
+      coords: "org.graceframework:grace-test-support"
     - scope: testCompile
       coords: "org.mockito:mockito-core"
     - scope: console
-      coords: "org.grails:grails-console"
+      coords: "org.graceframework:grace-console"
