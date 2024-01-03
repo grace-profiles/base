@@ -12,7 +12,7 @@ build:
         - idea
 dependencies:
     - scope: build
-      coords: "org.graceframework:grace-gradle-plugin:$graceVersion"
+      coords: "org.graceframework:grace-gradle-plugin:$grailsVersion"
     - scope: compileOnly
       coords: "io.micronaut:micronaut-inject-groovy"
     - scope: compile
