@@ -1,8 +1,8 @@
 description: Adds support for GSP to the project
 build:
     plugins:
-        - org.grails.grails-gsp
+        - org.graceframework.grace-gsp
 dependencies:
     - scope: compile
-      coords: "org.grails.plugins:gsp"
+      coords: "org.graceframework.plugins:gsp"
         
