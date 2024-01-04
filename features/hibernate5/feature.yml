@@ -1,7 +1,5 @@
 description: Adds GORM for Hibernate 5 to the project
 dependencies:
-    - scope: build
-      coords: 'org.graceframework.plugins:hibernate5:2022.0.0'
     - scope: compile
       coords: "org.graceframework.plugins:hibernate5"
     - scope: compile
