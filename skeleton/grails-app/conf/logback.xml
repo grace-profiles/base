@@ -13,6 +13,6 @@
 
     <root level="info">
         <appender-ref ref="STDOUT" />
-        <logger name="@grails.codegen.defaultPackage@.Application" level="debug" />
     </root>
+    <logger name="@grails.codegen.defaultPackage@.Application" level="debug" />
 </configuration>
