@@ -1,4 +1,4 @@
-description: Adds Asset Pipeline to a Grails project
+description: Adds Asset Pipeline to a Grace project
 build:
     plugins:
         - com.bertramlabs.asset-pipeline

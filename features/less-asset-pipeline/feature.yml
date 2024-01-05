@@ -1,4 +1,4 @@
-description: Adds LESS Transpiler Asset Pipeline to a Grails project
+description: Adds LESS Transpiler Asset Pipeline to a Grace project
 build:
     plugins:
         - asset-pipeline
