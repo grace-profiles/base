@@ -1,5 +1,5 @@
 description("Lists available plugins from the Plugin Repository") {
-    usage "grails list-plugins"
+    usage "grace list-plugins"
 }
 
 try {

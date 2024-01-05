@@ -1,4 +1,4 @@
-description: Packages a Grails application
+description: Packages a Grace application
 minArguments: 0
 usage: |
  package

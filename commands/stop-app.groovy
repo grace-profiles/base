@@ -3,11 +3,11 @@ import javax.management.remote.JMXConnectorFactory
 import javax.management.ObjectName
 import org.grails.io.support.*
 
-description("Stops the running Grails application") {
-    usage "grails stop-app"
+description("Stops the running Grace application") {
+    usage "grace stop-app"
     synonyms 'stop'
-    flag name:'port', description:"Specifies the port which the Grails application is running on (defaults to 8080 or 8443 for HTTPS)"
-    flag name:'host', description:"Specifies the host the Grails application is bound to"
+    flag name:'port', description:"Specifies the port which the Grace application is running on (defaults to 8080 or 8443 for HTTPS)"
+    flag name:'host', description:"Specifies the host the Grace application is bound to"
 }
 System.setProperty("run-app.running", "false")
 def getJMXLocalConnectorAddresses = {->

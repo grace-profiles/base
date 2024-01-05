@@ -1,5 +1,5 @@
-description("Runs the Grails interactive console") {
-    usage "grails console"
+description("Runs the Grace interactive console") {
+    usage "grace console"
     flag name:'debug-jvm', description:"Starts the JVM in debug mode allowing attachment of a remote debugger"
     flag name:'verbose', description:"Show more output from the build during startup"
 }

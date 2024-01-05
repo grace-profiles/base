@@ -1,7 +1,7 @@
 import groovy.xml.*
 
 description("Prints information about the given plugin") {
-    usage "grails plugin-info [PLUGIN NAME]"
+    usage "grace plugin-info [PLUGIN NAME]"
     argument name:"Plugin Name", description:"The name of the plugin"
     flag name:'snapshots', description:"Whether to list snapshot versions"
 }

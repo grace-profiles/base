@@ -1,5 +1,5 @@
-description("Executes Groovy scripts in a Grails context") {
-    usage "grails run-script"
+description("Executes Groovy scripts in a Grace context") {
+    usage "grace run-script"
     argument name: "Script Name(s)", description: "The paths of scripts relative to the project root"
 }
 try {

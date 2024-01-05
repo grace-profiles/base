@@ -1,5 +1,5 @@
 description("Creates a JAR or WAR archive for production deployment") {
-    usage "grails [ENV] assemble"
+    usage "grace [ENV] assemble"
     synonyms 'war', 'package'
     flag name:'clean', description:"Execute 'clean' prior to creating WAR"
 }

@@ -1,5 +1,5 @@
-description("Executes Grails commands") {
-    usage "grails run-command"
+description("Executes Grace commands") {
+    usage "grace run-command"
     argument name: "Command Name", description: "The name of the command to be executed"
 }
 try {

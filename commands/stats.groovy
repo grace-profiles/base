@@ -1,5 +1,5 @@
 description( "Prints statistics about the project" ) {
-    usage "grails stats"
+    usage "grace stats"
 }
 
 def EMPTY = /^\s*$/

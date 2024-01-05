@@ -1,4 +1,4 @@
-description: Cleans a Grails application's compiled sources
+description: Cleans a Grace application's compiled sources
 minArguments: 0
 usage: |
  clean

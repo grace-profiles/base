@@ -1,9 +1,9 @@
-description("Runs a Grails application") {
-    usage "grails run-app"
+description("Runs a Grace application") {
+    usage "grace run-app"
     synonyms 'run'
     flag name:'debug-jvm', description:"Starts the JVM in debug mode allowing attachment of a remote debugger"
-    flag name:'https', description:"Starts Grails in HTTPS mode on port 8443"
-    flag name:'port', description:"Specifies the port which to start Grails on (defaults to 8080 or 8443 for HTTPS)"
+    flag name:'https', description:"Starts Grace in HTTPS mode on port 8443"
+    flag name:'port', description:"Specifies the port which to start Grace on (defaults to 8080 or 8443 for HTTPS)"
     flag name:'host', description:"Specifies the host to bind to"
     flag name:'verbose', description:"Show more output from the build during startup"
 }

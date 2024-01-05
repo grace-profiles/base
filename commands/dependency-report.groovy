@@ -1,5 +1,5 @@
-description("Prints out the Grails application's dependencies") {
-    usage "grails dependency-report [configuration]"
+description("Prints out the Grace application's dependencies") {
+    usage "grace dependency-report [configuration]"
     argument name: "Configuration", description: "Which source set to report on (compile, test, etc)", required: false
 }
 

@@ -1,7 +1,7 @@
 import org.grails.io.watch.*
 
 description("Runs the applications tests") {
-    usage "grails test-app [TEST NAME]"
+    usage "grace test-app [TEST NAME]"
     completer TestsCompleter
     synonyms 'test'
     argument name:"Test Name", description:"The name of the test to run (optional)", required:false
