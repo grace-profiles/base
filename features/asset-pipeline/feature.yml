@@ -1,9 +1,9 @@
 description: Adds Asset Pipeline to a Grace project
 build:
     plugins:
-        - com.bertramlabs.asset-pipeline
+        - org.graceframework.asset-pipeline
 dependencies:
     - scope: build
-      coords: 'com.bertramlabs.plugins:asset-pipeline-gradle:4.3.0'
+      coords: 'org.graceframework.plugins:asset-pipeline-gradle:5.0.0'
     - scope: runtime
-      coords: "com.bertramlabs.plugins:asset-pipeline-grails:4.3.0"
+      coords: "org.graceframework.plugins:asset-pipeline-plugin:5.0.0"
