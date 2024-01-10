@@ -26,13 +26,13 @@ def DEFAULT_LOC_MATCHER = { file ->
 
 // maps file path to
 def pathToInfo = [
-    [name: "Controllers",        path: "^grails-app.controllers",      filetype: ["Controller.groovy"]],
-    [name: "URL Mappings",       path: "^grails-app.controllers",      filetype: ["UrlMappings.groovy"]],
-    [name: "Interceptors",       path: "^grails-app.controllers",      filetype: ["Interceptor.groovy"]],
-    [name: "Domain Classes",     path: "^grails-app.domain",           filetype: [".groovy"]],
-    [name: "Jobs",               path: "^grails-app.job",              filetype: [".groovy"]],
-    [name: "Services",           path: "^grails-app.services",         filetype: ["Service.groovy"]],
-    [name: "Tag Libraries",      path: "^grails-app.taglib",           filetype: ["TagLib.groovy"]],
+    [name: "Controllers",        path: "^app.controllers",             filetype: ["Controller.groovy"]],
+    [name: "URL Mappings",       path: "^app.controllers",             filetype: ["UrlMappings.groovy"]],
+    [name: "Interceptors",       path: "^app.controllers",             filetype: ["Interceptor.groovy"]],
+    [name: "Domain Classes",     path: "^app.domain",                  filetype: [".groovy"]],
+    [name: "Jobs",               path: "^app.job",                     filetype: [".groovy"]],
+    [name: "Services",           path: "^app.services",                filetype: ["Service.groovy"]],
+    [name: "Tag Libraries",      path: "^app.taglib",                  filetype: ["TagLib.groovy"]],
     [name: "Helpers",            path: "^src.main.groovy",             filetype: [".groovy", ".java"]],
     [name: "Unit Tests",         path: "^src.test.groovy",             filetype: [".groovy", ".java"]],
     [name: "Integration Tests",  path: "^src.integration-test.groovy", filetype: [".groovy", ".java"]],

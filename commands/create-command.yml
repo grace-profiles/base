@@ -8,5 +8,5 @@ description:
 steps:
  - command: render
    template: templates/artifacts/Command.groovy
-   destination: grails-app/commands/@artifact.package.path@/@artifact.name@Command.groovy
+   destination: app/commands/@artifact.package.path@/@artifact.name@Command.groovy
    convention: Command

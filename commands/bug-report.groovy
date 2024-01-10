@@ -10,7 +10,7 @@ String zipName = "${buildDir}/${fileName}-bug-report-${date}.zip"
 
 ant.zip(destfile: zipName, filesonly: true) {
     fileset(dir: baseDir.canonicalPath) {
-        include name: 'grails-app/**'
+        include name: 'app/**'
         include name: 'src/**'
         include name: 'build.gradle'
     }

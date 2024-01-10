@@ -73,7 +73,7 @@ runTests = { List args ->
 if(flag('continuous')) {
     def watcher = new DirectoryWatcher()
     def ext = ['groovy', 'java']
-    watcher.addWatchDirectory( file("grails-app"), ext)
+    watcher.addWatchDirectory( file("app"), ext)
     watcher.addWatchDirectory( file("src/main/groovy"), ext)
     watcher.addWatchDirectory( file("src/test/groovy"), ext)
     watcher.addWatchDirectory( file("src/integration-test/groovy"), ext)

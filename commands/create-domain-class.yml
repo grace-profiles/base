@@ -8,7 +8,7 @@ description:
 steps:
  - command: render
    template: templates/artifacts/DomainClass.groovy
-   destination: grails-app/domain/@artifact.package.path@/@artifact.name@.groovy
+   destination: app/domain/@artifact.package.path@/@artifact.name@.groovy
  - command: render
    template: templates/testing/DomainClass.groovy
    destination: src/test/groovy/@artifact.package.path@/@artifact.name@Spec.groovy
