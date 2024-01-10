@@ -6,7 +6,7 @@ dependencies:
     - scope: build
       coords: com.github.erdi:webdriver-binaries-gradle-plugin:3.2
     - scope: testCompile
-      coords: org.grails.plugins:geb
+      coords: org.graceframework.plugins:geb
     - scope: testCompile
       coords: org.seleniumhq.selenium:selenium-remote-driver:4.16.1
     - scope: testCompile
