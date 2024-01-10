@@ -1,3 +1,3 @@
-description "Example description", "grails example-usage"
+description "Example description", "grace script.groovy"
 
 println "Example Script"
