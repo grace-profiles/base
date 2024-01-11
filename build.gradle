@@ -48,6 +48,14 @@ tasks.withType(GroovyCompile) {
     }
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+    withJavadocJar()
+    withSourcesJar()
+}
+
 jar {
     manifest.mainAttributes(
         "Built-By": System.properties['user.name'],
