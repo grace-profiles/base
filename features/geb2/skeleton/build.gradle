@@ -1,10 +1,10 @@
 webdriverBinaries {
     if (!System.getenv().containsKey('GITHUB_ACTIONS')) {
         chromedriver {
-            version = '2.45.0'
+            version = '121.0.6167.85'
             fallbackTo32Bit = true
         }
-        geckodriver '0.30.0'
+        geckodriver '0.34.0'
     }
 }
 
