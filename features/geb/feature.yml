@@ -1,4 +1,4 @@
-description: Adds Geb 2, WebDriver 3.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
+description: Adds Geb 6, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
 build:
     plugins:
         - com.github.erdi.webdriver-binaries
