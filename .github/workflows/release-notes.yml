@@ -4,13 +4,13 @@ on:
     types: [closed,reopened]
   push:
     branches:
-      - 2022.0.x
+      - 2022.1.x
   workflow_dispatch:
 jobs:
   release_notes:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Check if it has release drafter config file
         id: check_release_drafter
         run: |
