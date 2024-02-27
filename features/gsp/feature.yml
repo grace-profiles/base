@@ -4,5 +4,5 @@ build:
         - org.graceframework.grace-gsp
 dependencies:
     - scope: compile
-      coords: "org.graceframework.plugins:gsp"
+      coords: "org.graceframework:grace-plugin-gsp"
         
