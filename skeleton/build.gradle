@@ -7,8 +7,8 @@ buildscript {
     }
 }
 
-version "0.1"
 group "@grails.app.group@"
+version "0.0.1-SNAPSHOT"
 
 @buildPlugins@
 
@@ -26,6 +26,10 @@ configurations {
 dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 @dependencies@
+}
+
+java {
+    sourceCompatibility = '11'
 }
 
 bootRun {
