@@ -1,6 +1,0 @@
-description: Adds RxGORM for MongoDB to the project
-dependencies:
-    - scope: compile
-      coords: 'org.grails.plugins:rx-mongodb'
-    - scope: compile
-      coords: 'org.grails.plugins:rxjava'
