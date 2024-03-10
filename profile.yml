@@ -4,11 +4,9 @@ skeleton:
     binaryExtensions: ['png','gif','jpg','jpeg','ico','icns','pdf','zip','jar','class']
 repositories:
     - "mavenCentral()"
-    - "https://repo.grails.org/grails/core"
 build:
     repositories:
         - "mavenCentral()"
-        - "https://repo.grails.org/grails/core"
         - "https://plugins.gradle.org/m2/"
         - "https://repo.gradle.org/gradle/libs-releases"
     plugins:
