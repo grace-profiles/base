@@ -4,6 +4,6 @@ build:
         - org.graceframework.plugins.views-markup
 dependencies:
     - scope: build
-      coords: "org.graceframework.plugins:views-gradle:5.2.1"
+      coords: "org.graceframework.plugins:views-gradle:6.0.0-M1"
     - scope: compile
       coords: "org.graceframework.plugins:views-markup"
