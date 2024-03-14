@@ -10,67 +10,6 @@ description("Stops the running Grace application") {
     flag name:'host', description:"Specifies the host the Grace application is bound to"
 }
 System.setProperty("run-app.running", "false")
-def getJMXLocalConnectorAddresses = {->
-	final applicationMainClassName = MainClassFinder.findMainClass()
-
-	if(applicationMainClassName) {
-		try {
-		    final String CONNECTOR_ADDRESS = "com.sun.management.jmxremote.localConnectorAddress"
-		    def VirtualMachine = getClass().classLoader.loadClass('com.sun.tools.attach.VirtualMachine')
-		    return VirtualMachine.list()
-		        .findAll { 
-		        	it.displayName() == applicationMainClassName 
-		        }
-		        .collect { desc ->
-		            def vm = VirtualMachine.attach(desc.id())
-		            try {
-		                def connectorAddress = vm.agentProperties.getProperty(CONNECTOR_ADDRESS)
-		                if (connectorAddress == null) {
-		                    // Trying to load agent
-		                    def agent = [vm.systemProperties.getProperty("java.home"), "lib", "management-agent.jar"].join(File.separator)
-		                    vm.loadAgent(agent)
-
-		                    connectorAddress = vm.agentProperties.getProperty(CONNECTOR_ADDRESS)
-		                }
-		                if (connectorAddress) {
-		                    return connectorAddress
-		                }
-		            } finally {
-		                vm.detach()
-		            }
-		        }.findAll { it }
-				
-		}
-		catch(Throwable e) {
-			// fallback to REST request if JMX not available
-		}
-	}
-}
-
-
-def addresses = getJMXLocalConnectorAddresses() 
-if(addresses) {
-	JMXServiceURL url = new JMXServiceURL(addresses[0])
-	def connector = JMXConnectorFactory.connect(url)
-
-	try {
-	    def server = connector.MBeanServerConnection
-
-	    def objectName = server.queryNames(null,null).find {  it.canonicalName.contains('name=shutdownEndpoint,type=Endpoint') }
-	    def mbean = new GroovyMBean(server, objectName)
-    	console.addStatus "Shutting down application..."
-        mbean.shutdown()
-        console.addStatus "Application shutdown."
-        return true
-    }
-    catch(e) {
-		console.addStatus "Application not found via JMX, attempting remote shutdown."
-    }
-	finally {
-	    connector.close()
-	}	
-}
-
 
 Integer port = flag('port')?.toInteger() ?: config.getProperty('server.port', Integer) ?: 8080
 String host = flag('host') ?: config.getProperty('server.address', String) ?: "localhost"
