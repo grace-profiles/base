@@ -14,7 +14,7 @@ build:
         - idea
 dependencies:
     - scope: build
-      coords: "org.graceframework:grace-gradle-plugin:$graceVersion"
+      coords: "org.graceframework:grace-gradle-plugin:@grace.version@"
     - scope: compile
       coords: "org.springframework.boot:spring-boot-starter-logging"
     - scope: compile

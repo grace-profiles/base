@@ -1,16 +1,9 @@
-buildscript {
-    repositories {
-@buildRepositories@
-    }
-    dependencies {
-@buildDependencies@
-    }
+plugins {
+@buildPlugins@
 }
 
 group "@grails.app.group@"
 version "0.0.1-SNAPSHOT"
-
-@buildPlugins@
 
 repositories {
 @repositories@
