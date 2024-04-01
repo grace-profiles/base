@@ -7,8 +7,8 @@ buildscript {
     }
 }
 
-version "0.1"
 group "@grails.app.group@"
+version "0.0.1-SNAPSHOT"
 
 @buildPlugins@
 
@@ -18,9 +18,6 @@ repositories {
 
 configurations {
     developmentOnly
-    runtimeClasspath {
-        extendsFrom developmentOnly
-    }
 }
 
 dependencies {
