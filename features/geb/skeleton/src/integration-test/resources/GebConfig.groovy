@@ -10,16 +10,16 @@ environments {
     }
 
     // run via “./gradlew -Dgeb.env=chromeHeadless iT”
-    chromeHeadless {
-        driver = {
-            ChromeOptions o = new ChromeOptions()
-            o.addArguments('headless')
-            new ChromeDriver(o)
-        }
-    }
+    // chromeHeadless {
+    //     driver = {
+    //         ChromeOptions o = new ChromeOptions()
+    //         o.addArguments('headless')
+    //         new ChromeDriver(o)
+    //     }
+    // }
 
     // run via “./gradlew -Dgeb.env=firefox iT”
-    firefox {
-        driver = { new FirefoxDriver() }
-    }
+    // firefox {
+    //     driver = { new FirefoxDriver() }
+    // }
 }
