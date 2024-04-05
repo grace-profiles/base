@@ -1,11 +1,9 @@
 webdriverBinaries {
-    if (!System.getenv().containsKey('GITHUB_ACTIONS')) {
-        chromedriver {
-            version = '121.0.6167.85'
-            fallbackTo32Bit = true
-        }
-        geckodriver '0.34.0'
+    chromedriver {
+        version = '122.0.6260.0'
+        fallbackTo32Bit = true
     }
+    geckodriver '0.33.0'
 }
 
 tasks.withType(Test) {
