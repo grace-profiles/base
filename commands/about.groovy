@@ -18,7 +18,7 @@ try {
     println('Application root:   ' + appRoot)
     println('Environment:        ' + appEnvironment)
     println()
-    println('Grails:             ' + grailsVersion)
+    println('Grace:              ' + grailsVersion)
     println('Groovy:             ' + groovyVersion)
     println('Gradle:             ' + gradleVersion)
     println('Spring Boot:        ' + springBootVersion)
@@ -32,11 +32,11 @@ catch (Exception ignored) {
 }
 
 String getAppName() {
-    getApplicationConfig().getProperty(('info.app.name'))
+    getApplicationConfig().getProperty('info.app.name')
 }
 
 String getAppVersion() {
-    getApplicationConfig().getProperty(('info.app.version'))
+    getApplicationConfig().getProperty('info.app.version')
 }
 
 String getAppRoot() {
