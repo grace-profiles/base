@@ -15,8 +15,6 @@ build:
 dependencies:
     - scope: build
       coords: "org.graceframework:grace-gradle-plugin:$graceVersion"
-    - scope: compileOnly
-      coords: "io.micronaut:micronaut-inject-groovy"
     - scope: compile
       coords: "org.springframework.boot:spring-boot-starter-logging"
     - scope: compile
@@ -25,8 +23,6 @@ dependencies:
       coords: "org.springframework.boot:spring-boot-autoconfigure"
     - scope: compile
       coords: "org.graceframework:grace-core"
-    - scope: testCompile
-      coords: "io.micronaut:micronaut-inject-groovy"
     - scope: testCompile
       coords: "org.graceframework:grace-test-support"
     - scope: testCompile
