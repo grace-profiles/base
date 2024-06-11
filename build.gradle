@@ -74,6 +74,11 @@ publishing {
 
             from components.java
 
+            afterEvaluate {
+                artifact source: "${project.buildDir}/classes/profile/META-INF/grails-profile/profile.yml",
+                        classifier: 'profile',
+                        extension: 'yml'
+            }
             pom {
                 name = "Grace Base Profile"
                 description = "A Grace profile for other profiles to extend from."
