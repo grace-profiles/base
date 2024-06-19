@@ -4,6 +4,6 @@ build:
         - org.graceframework.asset-pipeline
 dependencies:
     - scope: build
-      coords: 'org.graceframework.plugins:asset-pipeline-gradle:5.2.5'
+      coords: 'org.graceframework.plugins:asset-pipeline-gradle:5.2.6'
     - scope: runtime
-      coords: "org.graceframework.plugins:asset-pipeline-plugin:5.2.5"
+      coords: "org.graceframework.plugins:asset-pipeline-plugin:5.2.6"
