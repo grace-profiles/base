@@ -5,4 +5,3 @@ build:
 dependencies:
     - scope: compile
       coords: "org.graceframework:grace-plugin-gsp"
-        
