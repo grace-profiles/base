@@ -1,5 +1,7 @@
 import java.text.*
 
+deprecated('Deprecated because this command is not used anymore!')
+
 description( "Creates a zip file that can be attached to issue reports for the current project" ) {
     usage "grace bug-report"
 }
