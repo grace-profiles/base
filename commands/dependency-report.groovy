@@ -3,6 +3,8 @@ description("Prints out the Grace application's dependencies") {
     argument name: "Configuration", description: "Which source set to report on (compile, test, etc)", required: false
 }
 
+deprecated("Deprecated in favor of Gradle's task: dependencies")
+
 def arguments = []
 commandLine.systemProperties.each { key, value ->
     arguments << "-D${key}=$value".toString()
