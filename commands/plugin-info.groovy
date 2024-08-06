@@ -6,7 +6,7 @@ description("Prints information about the given plugin") {
     flag name:'snapshots', description:"Whether to list snapshot versions"
 }
 
-def pluginRepoURL = "https://repo.grails.org/grails/plugins3/org/grails/plugins"
+def pluginRepoURL = "https://repo1.maven.org/maven2/org/graceframework/plugins"
 def pluginName = args[0]
 def includeSnapshots = flag('snapshots')
 try {
@@ -59,7 +59,7 @@ try {
         console.log """* Definition:
 
 dependencies {
-    compile "org.grails.plugins:${pluginName}:${latestVersion}"    
+    implementation "org.graceframework.plugins:${pluginName}:${latestVersion}"    
 }
 
 """
