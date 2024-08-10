@@ -10,7 +10,7 @@ def pluginRepoURL = "https://repo1.maven.org/maven2/org/graceframework/plugins"
 def pluginName = args[0]
 def includeSnapshots = flag('snapshots')
 try {
-    console.addStatus "Plugin Info: ${pluginName}"
+    console.addStatus "Plugin Name: ${pluginName}"
     def mavenMetadata = new XmlSlurper().parseText(new URL("${pluginRepoURL}/${pluginName}/maven-metadata.xml").text)
     def latestVersion = mavenMetadata.versioning.release.text()
     if(!latestVersion) {
@@ -23,7 +23,7 @@ try {
             !it?.endsWith('-SNAPSHOT')
         }
     }
-    console.addStatus "All Versions: ${allVersions.join(',')}"
+    console.addStatus "All Versions: ${allVersions?.reverse()?.join(', ')}"
 
     def pluginInfo
     if(latestVersion.endsWith('-SNAPSHOT')) {
