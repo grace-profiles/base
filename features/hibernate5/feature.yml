@@ -2,8 +2,6 @@ description: Adds GORM for Hibernate 5 to the project
 dependencies:
     - scope: compile
       coords: "org.graceframework.plugins:hibernate5"
-    - scope: compile
-      coords: "org.hibernate:hibernate-core:5.6.15.Final"
     - scope: runtime
       coords: "com.h2database:h2"
     - scope: runtime
