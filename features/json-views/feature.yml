@@ -4,7 +4,7 @@ build:
         - org.graceframework.plugins.views-json
 dependencies:
     - scope: build
-      coords: "org.graceframework.plugins:views-gradle:5.2.6"
+      coords: "org.graceframework.plugins:views-gradle:5.2.7"
     - scope: compile
       coords: "org.graceframework.plugins:views-json"
     - scope: compile
