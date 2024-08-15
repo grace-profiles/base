@@ -6,9 +6,3 @@ dependencies:
       coords: "com.h2database:h2"
     - scope: runtime
       coords: "org.apache.tomcat:tomcat-jdbc"
-    - scope: runtime
-      coords: 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
-    - scope: runtime
-      coords: 'jakarta.el:jakarta.el-api:3.0.3'
-    - scope: runtime
-      coords: 'org.glassfish:jakarta.el:3.0.4'
