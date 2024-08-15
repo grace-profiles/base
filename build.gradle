@@ -2,7 +2,6 @@ buildscript {
     repositories {
         // mavenLocal()
         mavenCentral()
-        // maven { url "https://repo.grails.org/grails/core" }
         maven { url "https://plugins.gradle.org/m2/" }
         maven { url 'https://repo.gradle.org/gradle/libs-releases' }
     }
@@ -31,7 +30,6 @@ apply plugin: "signing"
 repositories {
     // mavenLocal()
     mavenCentral()
-    // maven { url "https://repo.grails.org/grails/core" }
 }
 
 dependencies {
