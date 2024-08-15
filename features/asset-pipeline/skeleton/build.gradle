@@ -1,4 +1,5 @@
 assets {
     minifyJs = true
     minifyCss = true
+    skipNonDigests = true
 }
