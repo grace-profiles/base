@@ -18,7 +18,9 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = '17'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 tasks.withType(Jar) {
