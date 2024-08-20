@@ -1,6 +1,6 @@
 webdriverBinaries {
     chromedriver {
-        version = '122.0.6260.0'
+        version = '126.0.6478.126'
         fallbackTo32Bit = true
     }
     geckodriver '0.33.0'
