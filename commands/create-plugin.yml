@@ -1,0 +1,12 @@
+description:
+    - Creates a dynamic Plugin
+    - usage: 'create-plugin [Plugin Name]'
+    - argument: Plugin Name
+      description: The name of the Plugin
+    - flag: force
+      description: Whether to override existing files
+steps:
+ - command: render
+   template: templates/artifacts/Plugin.groovy
+   destination: app/plugins/@artifact.package.path@/@artifact.name@GrailsPlugin.groovy
+   convention: GrailsPlugin
