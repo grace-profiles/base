@@ -16,6 +16,7 @@ To make it easier for users to use and upgrade, Profile adopts a version policy 
 
 | Profile Version | Grace Version |
 |-----------------|---------------|
+| 2023.1.x        | 2023.1.x      |
 | 2023.0.x        | 2023.0.x      |
 | 2022.2.x        | 2022.2.x      |
 | 2022.1.x        | 2022.1.x      |
