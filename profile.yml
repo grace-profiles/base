@@ -15,12 +15,6 @@ build:
 dependencies:
     - scope: build
       coords: "org.graceframework:grace-gradle-plugin:@grace.version@"
-    - scope: compile
-      coords: "org.springframework.boot:spring-boot-starter-logging"
-    - scope: compile
-      coords: "org.springframework.boot:spring-boot-starter-validation"
-    - scope: compile
-      coords: "org.graceframework:grace-core"
     - scope: testCompile
       coords: "org.graceframework:grace-test-support"
     - scope: testCompile
