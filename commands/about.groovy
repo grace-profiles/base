@@ -32,11 +32,33 @@ catch (Exception ignored) {
 }
 
 String getAppName() {
-    getApplicationConfig().getProperty('info.app.name')
+    String appName = getApplicationConfig().getProperty('info.app.name')
+    if (!appName) {
+        File settingsFile = new File(BuildSettings.BASE_DIR, 'settings.gradle')
+        if (settingsFile.exists()) {
+            settingsFile.eachLine { line ->
+                if (line.startsWith('rootProject.name')) {
+                    appName = line[20..-2]
+                    return appName
+                }
+            }
+        }
+    }
+    appName
 }
 
 String getAppVersion() {
-    getApplicationConfig().getProperty('info.app.version')
+    String appVersion = getApplicationConfig().getProperty('info.app.version')
+    if (!appVersion) {
+        File gradlePropertiesFile = new File(BuildSettings.BASE_DIR, 'gradle.properties')
+        Properties fileProps = new Properties()
+        gradlePropertiesFile.withInputStream { InputStream input ->
+            fileProps.load(input)
+            String version = fileProps.get('version')
+            appVersion = version
+        }
+    }
+    appVersion
 }
 
 String getAppRoot() {
