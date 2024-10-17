@@ -29,6 +29,10 @@ spring:
                 - '**/*.gson'
                 - 'logback.groovy'
                 - '*.properties'
+    jpa:
+        open-in-view: false
+    liquibase:
+        enabled: false
 environments:
     development:
         management:
