@@ -8,8 +8,6 @@ info:
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
 spring:
-    jmx:
-        unique-names: true
     main:
         banner-mode: "console"
     groovy:
