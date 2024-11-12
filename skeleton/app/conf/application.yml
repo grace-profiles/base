@@ -24,16 +24,10 @@ spring:
         open-in-view: false
     liquibase:
         enabled: false
-environments:
-    development:
-        management:
-            endpoints:
-                enabled-by-default: true
-                web:
-                    base-path: '/actuator'
-                    exposure:
-                        include: '*'
-    production:
-        management:
-            endpoints:
-                enabled-by-default: false
+management:
+    endpoints:
+        enabled-by-default: true
+        web:
+            base-path: '/actuator'
+            exposure:
+                include: '*'
