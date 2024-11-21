@@ -1,4 +1,4 @@
-package @grails.codegen.defaultPackage@
+package @grace.codegen.defaultPackage@
 
 import grails.boot.Grails
 import groovy.transform.CompileStatic

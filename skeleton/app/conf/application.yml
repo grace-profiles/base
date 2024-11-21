@@ -1,7 +1,7 @@
 grails:
-    profile: @grails.profile@
+    profile: @grace.profile@
     codegen:
-        defaultPackage: @grails.codegen.defaultPackage@
+        defaultPackage: @grace.codegen.defaultPackage@
 info:
     app:
         name: '@info.app.name@'

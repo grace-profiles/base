@@ -1,4 +1,4 @@
-package @grails.codegen.defaultPackage@
+package @grace.codegen.defaultPackage@
 
 class BootStrap {
 

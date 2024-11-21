@@ -2,7 +2,7 @@ plugins {
 @buildPlugins@
 }
 
-group "@grails.app.group@"
+group "@grace.app.group@"
 
 repositories {
 @repositories@
