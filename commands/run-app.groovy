@@ -83,6 +83,7 @@ try {
         }
     }
     else {
+        System.setProperty('org.gradle.console', 'plain')
         def future
         if(flag('debug-jvm')) {
             future = gradle.async."bootRun --debug-jvm"(*arguments)
