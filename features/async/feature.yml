@@ -1,0 +1,4 @@
+description: Adds support for the Grace Async
+dependencies:
+    - scope: compile
+      coords: "org.graceframework.plugins:async"
