@@ -5,6 +5,10 @@ description("Runs the Grace interactive console") {
 }
 
 def isIm = org.grails.cli.GrailsCli.isInteractiveModeActive()
+if (isIm) {
+    System.setProperty('org.gradle.console', 'plain')
+}
+
 def arguments = []
 
 def con = getConsole()
