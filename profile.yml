@@ -18,5 +18,3 @@ dependencies:
       coords: "org.graceframework:grace-test-support"
     - scope: testCompile
       coords: "org.mockito:mockito-core"
-    - scope: console
-      coords: "org.graceframework:grace-console"
