@@ -2,7 +2,7 @@ plugins {
 @buildPlugins@
 }
 
-group "@grace.app.group@"
+group = "@grace.app.group@"
 
 repositories {
 @repositories@
