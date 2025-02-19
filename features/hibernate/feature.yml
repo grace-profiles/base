@@ -2,5 +2,3 @@ description: Adds GORM for Hibernate to the project
 dependencies:
     - scope: compile
       coords: "org.graceframework.plugins:hibernate"
-    - scope: runtime
-      coords: "com.h2database:h2"
