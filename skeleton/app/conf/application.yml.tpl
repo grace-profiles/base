@@ -1,0 +1,33 @@
+grails:
+    profile: @grace.profile@
+    codegen:
+        defaultPackage: @grace.codegen.defaultPackage@
+info:
+    app:
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
+spring:
+    groovy:
+        template:
+            check-template-location: false
+    devtools:
+        restart:
+            additional-exclude:
+                - '*.gsp'
+                - '**/*.gsp'
+                - '*.gson'
+                - '**/*.gson'
+                - 'logback.groovy'
+                - '*.properties'<% if (project.hasFeature('hibernate')) { %>
+    jpa:
+        open-in-view: false<% } %><% if (project.hasFeature('database-migration')) { %>
+    liquibase:
+        enabled: false<% } %>
+management:
+    endpoints:
+        enabled-by-default: true
+        web:
+            base-path: '/actuator'
+            exposure:
+                include: '*'
