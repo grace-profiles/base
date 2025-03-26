@@ -35,3 +35,15 @@ For further reference, please consider the following sections:
 * [Grace Geb](https://github.com/graceframework/grace-geb) provides the Geb dependencies and a `create-functional-test` command for generating Geb tests.
 * [Grace Htmx](https://github.com/grace-plugins/grace-htmx) provides helpers to easy use [HTMX](https://htmx.org).
 * [Grace Views](https://github.com/graceframework/grace-views) provides implementation includes JSON views powered by Groovy's JsonBuilder, and other view types.
+
+### Profiles
+
+Grace provides several profiles in the [Grace Profiles](https://github.com/grace-profiles) repository, 
+
+* [base](https://github.com/grace-profiles/base) is a profile for other profiles to extend from
+* [plugin](https://github.com/grace-profiles/plugin) is a profie to create a plugin
+* [profile](https://github.com/grace-profiles/profile) is a profie to create a custom profile
+* [rest-api](https://github.com/grace-profiles/rest-api) is a profie for REST API applications
+* [starter](https://github.com/grace-profiles/starter) is a profile for getting start to create anything you like with application templates
+* [web-plugin](https://github.com/grace-profiles/web-plugin) is a profile for Web plugin that contains web resources `css` `js` `images`
+* [web](https://github.com/grace-profiles/web) is the default profile to creae a web app
