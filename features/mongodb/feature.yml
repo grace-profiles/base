@@ -1,0 +1,4 @@
+description: Adds GORM for MonogoDB to the project
+dependencies:
+    - scope: compile
+      coords: "org.graceframework.plugins:mongodb"

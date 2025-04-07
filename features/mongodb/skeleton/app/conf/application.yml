@@ -1,0 +1,7 @@
+grails:
+    mongodb:
+        host: "localhost"
+        port: 27017
+        # username: "user"
+        # password: "password"
+        databaseName: "@grace.codegen.projectSnakeCaseName@"
