@@ -29,6 +29,8 @@ For further reference, please consider the following sections:
 * [Grace Asset Pipeline Plugin](https://github.com/grace-plugins/grace-asset-pipeline) is a plugin used for managing and processing static assets in Grace applications.
 * [Grace Async and Events](https://github.com/graceframework/grace-async) provides asynchronous, parallel programming, Events APIs, which integrate Grace with various asynchronous libraries and frameworks such as GPars and RxJava.
 * [Grace Cache](https://github.com/graceframework/grace-cache) provides powerful and easy to use caching functionality to Grace applications and plugins.
+* [Grace Data Hibernate](https://github.com/graceframework/grace-data-hibernate) provides a GORM implementation for Hibernate ORM.
+* [Grace Data MongoDB](https://github.com/graceframework/grace-data-mongodb) provides a GORM implementation for the MongodB Document Database.
 * [Grace Database Migration](https://github.com/graceframework/grace-database-migration) helps you manage database changes uses the Liquibase library.
 * [Grace Scaffolding](https://github.com/graceframework/grace-scaffolding) is a plugin to generate scaffolded controllers and views for your Grace application.
 * [Grace Fields](https://github.com/graceframework/grace-fields) is a plugin allows you to customize the rendering of input fields for properties of domain objects, command beans and POGOs based on their type, name, etc.
