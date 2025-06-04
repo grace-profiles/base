@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Grace Profile : Base 2023.3.0-SNAPSHOT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass(el) {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+    <style>
+        .contribute-btn {
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body class="body" onload="addJsClass();">
+
+<div id="navigation">
+    <div class="navHeader">
+        
+        <span id="logo">
+            <a href="https://graceframework.org" title="Go to Grace Framework Website">
+                <img src="../../img/grace.svg" alt="Grace Framework" />
+            </a>
+        </span>
+        
+        <div class="docHeader">
+            <h1 class="docTitle">Grace Profile : Base</h1>
+            <h3 class="docSubTitle">A Grace profile for other profiles to extend from</h3>
+        </div>
+    </div>
+
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/upgrade.html"><strong>2</strong><span>Upgrade</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/profileinfo.html"><strong>3</strong><span>Profile Info</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../../guide/support.html"><strong>4</strong><span>Support</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<table id="colset" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="reference corner-all">
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+                
+                <div class='contribute-btn'>
+                    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grace-profiles/base/edit/2023.3.x/docs/ref/Features/asset-pipeline.adoc"'>
+                        <i class='fa fa-pencil-square-o'></i> Improve this doc
+                    </button>
+                </div>
+                
+
+                <div class="sect1">
+<h2 id="_asset_pipeline">asset-pipeline</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_description">Description</h3>
+<div class="paragraph">
+<p>Adds Asset Pipeline to a Grace project.</p>
+</div>
+</div>
+</div>
+</div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Commands</h1>
+                        <div class="menu-sub">
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/about.html">about</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/assemble.html">assemble</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/bug-report.html">bug-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/clean.html">clean</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/compile.html">compile</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/console.html">console</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-command.html">create-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-domain-class.html">create-domain-class</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-plugin.html">create-plugin</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-script.html">create-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/create-unit-test.html">create-unit-test</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/dependency-report.html">dependency-report</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/package.html">package</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/run-app.html">run-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/run-command.html">run-command</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/run-script.html">run-script</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/shell.html">shell</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/stats.html">stats</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/stop-app.html">stop-app</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Commands/test-app.html">test-app</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                        <h1 class="menu-title" onclick="toggleRef(nextElement(this))">Features</h1>
+                        <div class="menu-sub selected">
+                            
+                            
+                            <div class="menu-item"><a href="../../ref/Features/asset-pipeline.html">asset-pipeline</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/async.html">async</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/cache.html">cache</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/database-migration.html">database-migration</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/events.html">events</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/geb.html">geb</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/gsp.html">gsp</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/hibernate.html">hibernate</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/json-views.html">json-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/markup-views.html">markup-views</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/mongodb.html">mongodb</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    Copyright &copy; 2022-2025 Michael Yan and the original authors. The content is licensed under a Creative Commons Attribution 4.0 International (CC BY SA 4.0) license.
+    
+</div>
+
+
+<script type="text/javascript" src="../../js/docs.js"></script>
+
+</body>
+</html>
