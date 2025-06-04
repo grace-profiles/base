@@ -1,0 +1,30 @@
+== create-plugin
+
+=== Description
+
+Creates a dynamic and inline plugin in the `app/plugins`.
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+
+|Plugin Name
+|The name of the plugin to be created
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-plugin [Plugin Name]
+----
+
+=== Examples
+
+[source,groovy]
+----
+$ grace create-plugin Taggable
+----

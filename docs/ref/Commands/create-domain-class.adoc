@@ -1,0 +1,32 @@
+== create-domain-class
+
+=== Description
+
+Creates a Domain Class.
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+
+|Class Name
+|The name of the Domain Class to be created
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-domain-class [Class Name]
+----
+
+=== Examples
+
+[source,groovy]
+----
+$ grace create-domain-class
+$ grace create-domain-class Post
+$ grace create-domain-class org.blog.Post
+----

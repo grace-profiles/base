@@ -1,0 +1,5 @@
+== asset-pipeline
+
+=== Description
+
+Adds Asset Pipeline to a Grace project.

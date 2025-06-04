@@ -1,0 +1,14 @@
+== dependency-report
+
+=== Description
+
+Prints out the Grace application's dependencies.
+
+WARNING: this command is deprecated in favor of Gradle's task: dependencies!
+
+=== Usage
+
+[source,bash]
+----
+$ grace dependency-report
+----

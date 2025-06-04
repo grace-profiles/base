@@ -1,0 +1,3 @@
+Grace Profiles encapsulate project commands, templates, and plugins.
+
+`Base` is a profile for other https://github.com/grace-profiles[profiles] to extend from.

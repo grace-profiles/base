@@ -1,0 +1,31 @@
+== about
+
+=== Description
+
+About your application's environment.
+
+=== Usage
+
+[source,bash]
+----
+$ grace about
+----
+
+[source,bash]
+----
+
+| About your application's environment
+
+Name:               blog
+Version:            0.0.1-SNAPSHOT
+Application root:   /Users/grace/grace-apps/blog
+Environment:        development
+
+Grace:              2023.3.0
+Groovy:             4.0.27
+Gradle:             8.14
+Spring Boot:        3.3.12
+JVM:                17.0.15 (BellSoft 17.0.15+10-LTS)
+OS:                 Mac OS X 12.7.6 aarch64
+
+----

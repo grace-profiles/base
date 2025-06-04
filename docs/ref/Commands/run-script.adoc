@@ -1,0 +1,23 @@
+== run-script
+
+=== Description
+
+Executes Groovy scripts in a Grace context.
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+
+|Script Name
+|The paths of scripts relative to the project root
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace run-script [SCRIPT NAME]
+----

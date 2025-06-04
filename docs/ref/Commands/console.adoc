@@ -1,0 +1,14 @@
+== console
+
+=== Description
+
+Runs the Grace interactive console.
+
+NOTE: this command is delegae to Gradle's **console** task.
+
+=== Usage
+
+[source,bash]
+----
+$ grace console
+----

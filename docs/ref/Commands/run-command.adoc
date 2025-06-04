@@ -1,0 +1,23 @@
+== run-command
+
+=== Description
+
+Executes Grace commands.
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+
+|Command Name
+|The name of the command to be executed
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace run-command [COMMAND NAME]
+----

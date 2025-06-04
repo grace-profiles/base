@@ -1,0 +1,58 @@
+== test-app
+
+=== Description
+
+Runs the applications tests.
+
+=== Synonyms
+
+`test`
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+|**Required**
+
+|Test Name
+|The name of the test to run (optional)
+|false
+|===
+
+=== Flags
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Type**
+
+|debug-jvm
+|Starts the JVM in debug mode allowing attachment of a remote debugger
+|boolean
+
+|unit
+|Run unit tests (test target)
+|string
+
+|integration
+|Run integration tests (integrationTest target)
+|boolean
+
+|clean
+|Re-run all tests (cleanTest cleanIntegrationTest target)
+|boolean
+
+|continuous
+|Monitor the project for changes and reruns tests automatically on each change
+|boolean
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace test-app [Test Name]
+----

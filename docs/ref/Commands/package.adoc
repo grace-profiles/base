@@ -1,0 +1,14 @@
+== package
+
+=== Description
+
+Packages a Grace application.
+
+NOTE: this command is delegae to Gradle's **assemble** task.
+
+=== Usage
+
+[source,bash]
+----
+$ grace package
+----

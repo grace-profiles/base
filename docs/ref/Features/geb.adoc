@@ -1,0 +1,5 @@
+== geb
+
+=== Description
+
+Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.

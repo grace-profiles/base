@@ -1,0 +1,49 @@
+You can always get information about the provided command and available features executing
+`grace profile-info base`,
+
+You will see an output similar to:
+
+[source, bash]
+----
+Profile: base
+Version: 2023.3.0
+--------------------------------------------------------------------------------
+The base profile extended by other profiles
+
+Provided Commands:
+--------------------------------------------------------------------------------
+* about                          About your application's environment
+* assemble                       Creates a JAR or WAR archive for production deployment
+* bug-report                     Creates a zip file that can be attached to issue reports for the current project [deprecated]
+* clean                          Cleans a Grace application's compiled sources
+* compile                        Compiles a Grace application
+* console                        Runs the Grace interactive console
+* create-command                 Creates an Application Command
+* create-domain-class            Creates a Domain Class
+* create-plugin                  Creates a Dynamic Plugin
+* create-script                  Creates a Groovy Script
+* create-unit-test               Creates a Unit Test
+* dependency-report              Prints out the Grace application's dependencies [deprecated]
+* package                        Packages a Grace application
+* run-app                        Runs a Grace application
+* run-command                    Executes Grace commands
+* run-script                     Executes Groovy scripts in a Grace context
+* shell                          Runs the Grace interactive shell
+* stats                          Prints statistics about the project
+* stop-app                       Stops the running Grace application
+* test-app                       Runs the applications tests
+
+Provided Features:
+--------------------------------------------------------------------------------
+* asset-pipeline                 Adds Asset Pipeline to a Grace project
+* async                          Adds support for the Grace Async
+* cache                          Adds support for the Grace Cache abstraction
+* database-migration             Grace Database Migration Plugin
+* events                         Adds support for the Grace EventBus abstraction
+* geb                            Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
+* gsp                            Adds support for GSP to the project
+* hibernate                      Adds GORM for Hibernate to the project
+* json-views                     Adds support for JSON Views to the project
+* markup-views                   Adds support for Markup Views to the project
+* mongodb                        Adds GORM for MonogoDB to the project
+----

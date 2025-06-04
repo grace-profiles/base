@@ -1,0 +1,14 @@
+== clean
+
+=== Description
+
+Cleans a Grace application's compiled sources.
+
+NOTE: this command is delegae to Gradle's **clean** task.
+
+=== Usage
+
+[source,bash]
+----
+$ grace clean
+----

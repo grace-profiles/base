@@ -1,0 +1,18 @@
+== shell
+
+=== Description
+
+Runs the Grace interactive shell.
+
+TIP: the Grace shell must be run from Gradle using './gradlew shell -q' or './gradlew.bat shell -q'.
+
+=== Synonyms
+
+`sh`
+
+=== Usage
+
+[source,bash]
+----
+$ grace shell
+----

@@ -1,0 +1,62 @@
+== run-app
+
+=== Description
+
+Runs a Grace application.
+
+=== Flags
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Type**
+
+|debug-jvm
+|Starts the JVM in debug mode allowing attachment of a remote debugger
+|boolean
+
+|https
+|Starts Grace in HTTPS mode on port 8443
+|string
+
+|port
+|Specifies the port which to start Grace on
+|string, default: 8080 for HTTP or 8443 for HTTPS
+
+|host
+|Specifies the host to bind to
+|string
+
+|verbose
+|Show more output from the build during startup
+|boolean
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace run-app
+
+| Running application...
+
+               ______
+              / _____)
+ o  o   o  o | /  ___   ____   ____   ____   ____
+  \/ \^/ \/  | | (___) / ___) / _  | / ___) / _  )
+   \_____/   | \____/|| |    ( ( | |( (___ ( (/ /
+    =====     \_____/ |_|     \_||_| \____) \____)
+  ================================================
+  :: Grace ::                          (v2023.3.0)
+
+2025-05-14T13:12:44.063+08:00  INFO 47323 --- [  restartedMain] grace.apps.Application                   : Starting Application using Java 17.0.15 with PID 47323 (...)
+2025-05-14T13:12:44.064+08:00  INFO 47323 --- [  restartedMain] grace.apps.Application                   : The following 1 profile is active: "development"
+...
+2025-05-14T13:12:46.006+08:00  INFO 47323 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-14T13:12:46.012+08:00  INFO 47323 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-14T13:12:46.013+08:00  INFO 47323 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+...
+2025-05-14T13:12:46.945+08:00  INFO 47323 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-14T13:12:47.014+08:00  INFO 47323 --- [  restartedMain] grace.apps.Application                   : Started Application in 3.156 seconds (process running for 3.529)
+----

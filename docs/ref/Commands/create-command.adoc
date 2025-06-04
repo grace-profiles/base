@@ -1,0 +1,23 @@
+== create-command
+
+=== Description
+
+Creates an Application Command in the `app/commands`.
+
+=== Arguments
+
+[cols="1,1"]
+|===
+|**Name**
+|**Description**
+
+|Command Name
+|The name of the command to be created
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace create-command [Command Name]
+----

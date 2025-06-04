@@ -1,0 +1,33 @@
+== stop-app
+
+=== Description
+
+Stops the running Grace application.
+
+=== Synonyms
+
+`stop`
+
+=== Flags
+
+[cols="1,2,1"]
+|===
+|**Name**
+|**Description**
+|**Type**
+
+|port
+|Specifies the port which to start Grace on
+|string, default: 8080 for HTTP or 8443 for HTTPS
+
+|host
+|Specifies the host to bind to
+|string
+|===
+
+=== Usage
+
+[source,bash]
+----
+$ grace stop-app
+----

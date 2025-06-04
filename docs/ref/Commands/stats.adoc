@@ -1,0 +1,12 @@
+== stats
+
+=== Description
+
+Prints statistics about the project.
+
+=== Usage
+
+[source,bash]
+----
+$ grace stats
+----

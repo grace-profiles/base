@@ -1,0 +1,5 @@
+== hibernate
+
+=== Description
+
+Adds GORM for Hibernate to the project

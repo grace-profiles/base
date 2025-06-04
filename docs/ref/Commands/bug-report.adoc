@@ -1,0 +1,22 @@
+== bug-report
+
+=== Description
+
+The bug-report command packages up the sources of your application (excluding jars, build dirs, dot files etc.) into a ZIP file.
+
+The file name includes the application name and a timestamp. This is useful for reporting issues to the https://github.com/graceframework/grace-framework/issues[GitHub Issues]
+
+WARNING: this command is deprecated and will be removed in the future release!
+
+=== Usage
+
+[source,bash]
+----
+$ grace bug-report
+----
+
+[source,bash]
+----
+| Warning Command [bug-report] is deprecated, and will be removed in the future release.
+| Created bug report ZIP: build/myapp-bug-report-04062024.zip
+----
