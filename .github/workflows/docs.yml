@@ -34,7 +34,6 @@ jobs:
           echo "$(cat gradle.properties | grep 'projectVersion=' | awk '{print $1}')" >> "$GITHUB_OUTPUT"
       - name: Generate Docs
         id: build
-        uses: gradle/actions/setup-gradle@v3
         run: ./gradlew docs
       - name: Deploy to GitHub Pages
         id: deployment
