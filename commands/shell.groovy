@@ -3,5 +3,14 @@ description("Runs the Grace interactive shell") {
     synonyms 'sh'
 }
 
-console.error "The Grace shell must be run from Gradle using 'gradle shell -q'"
-return false
+System.setProperty('org.gradle.console', 'plain')
+
+def arguments = []
+
+if( !(flag('verbose') || console.verbose)) {
+    arguments << '-q' << '--console=plain'
+}
+
+gradle."shell"(*arguments)
+
+return true

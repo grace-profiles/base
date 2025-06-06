@@ -4,7 +4,7 @@
 
 Runs the Grace interactive shell.
 
-TIP: the Grace shell must be run from Gradle using './gradlew shell -q' or './gradlew.bat shell -q'.
+TIP: the Grace Shell also can be run from Gradle using './gradlew shell -q --console=plain' or './gradlew.bat shell -q --console=plain'.
 
 === Synonyms
 
