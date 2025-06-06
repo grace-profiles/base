@@ -1,9 +1,9 @@
 webdriverBinaries {
     chromedriver {
-        version = '126.0.6478.126'
+        version = '137.0.7151.68'
         fallbackTo32Bit = true
     }
-    geckodriver '0.33.0'
+    geckodriver '0.36.0'
 }
 
 tasks.withType(Test) {
