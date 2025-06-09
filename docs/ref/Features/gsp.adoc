@@ -2,4 +2,4 @@
 
 === Description
 
-Adds support for GSP to the project
+Adds support for GSP to the project.

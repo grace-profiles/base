@@ -13,10 +13,4 @@ Creates a JAR or WAR archive for production deployment.
 [source,bash]
 ----
 $ grace [ENV] assemble
-
-BUILD SUCCESSFUL in 15s
-10 actionable tasks: 4 executed, 6 up-to-date
-
-| Built application to build/libs using environment: development
-
 ----

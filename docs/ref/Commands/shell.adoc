@@ -2,7 +2,7 @@
 
 === Description
 
-Runs the Grace interactive shell.
+Runs the Grace interactive shell, embedded within a https://groovy-lang.org/groovysh.html[Groovy Shell], but Grace Shell provides more variables, such as `app`, `ctx`, `config`, `i18n`, `pluginManager`, etc.
 
 TIP: the Grace Shell also can be run from Gradle using './gradlew shell -q --console=plain' or './gradlew.bat shell -q --console=plain'.
 

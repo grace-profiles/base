@@ -3,3 +3,7 @@
 === Description
 
 Adds support for the Grace Async.
+
+=== Resources
+
+* https://graceframework.org/grace-async/6.3.x/[Grace Async Framework]

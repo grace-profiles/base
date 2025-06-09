@@ -2,9 +2,9 @@
 
 === Description
 
-Runs the Grace interactive console.
+Runs the Grace interactive console, embedded within a https://groovy-lang.org/groovyconsole.html[Groovy Console], but Grace Console provides more variables, such as `app`, `ctx`, `config`, `i18n`, `pluginManager`, etc.
 
-NOTE: this command is delegae to Gradle's **console** task.
+NOTE: the Grace Console also can be run from Gradle using './gradlew console' or './gradlew.bat console'.
 
 === Usage
 

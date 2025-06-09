@@ -2,4 +2,8 @@
 
 === Description
 
-Adds GORM for MonogoDB to the project
+Adds GORM for MonogoDB to the project.
+
+=== Resources
+
+* https://graceframework.org/grace-data-mongodb/2023.3.x/[Grace Data MonogoDB]

@@ -3,3 +3,7 @@
 === Description
 
 Adds Grace Database Migration Plugin.
+
+=== Resources
+
+* https://graceframework.org/grace-database-migration/6.3.x/[Grace Database Migration]

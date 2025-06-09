@@ -3,3 +3,7 @@
 === Description
 
 Adds support for JSON Views to the project.
+
+=== Resources
+
+* https://graceframework.org/grace-views/6.3.x/[Grace Views]

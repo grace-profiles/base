@@ -3,3 +3,7 @@
 === Description
 
 Adds support for the Grace EventBus abstraction.
+
+=== Resources
+
+* https://graceframework.org/grace-async/6.3.x/[Grace Events Framework]

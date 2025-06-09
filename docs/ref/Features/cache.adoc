@@ -3,3 +3,7 @@
 === Description
 
 Adds support for the Grace Cache abstraction.
+
+=== Resources
+
+* https://graceframework.org/grace-cache/6.3.x/[Grace Cache]

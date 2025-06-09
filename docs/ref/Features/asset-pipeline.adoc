@@ -3,3 +3,7 @@
 === Description
 
 Adds Asset Pipeline to a Grace project.
+
+=== Resources
+
+* https://plugins.graceframework.org/grace-asset-pipeline/6.3.x/[Grace Asset Pipeline]

@@ -2,4 +2,8 @@
 
 === Description
 
-Adds GORM for Hibernate to the project
+Adds GORM for Hibernate to the project.
+
+=== Resources
+
+* https://graceframework.org/grace-data-hibernate/2023.3.x/[Grace Data Hibernate]

@@ -1,5 +1,32 @@
 == geb
 
+[NOTE]
+====
+Because there is an issue with webdriver-binaries-gradle-plugin: https://github.com/erdi/webdriver-binaries-gradle-plugin/issues/43[Execution failed for task ':configureChromeDriverBinary' with gradle 8.7],
+so if you still want to use the plugin to configure webdriver, you should downgrade Gradle to `8.0~8.6`.
+====
+
 === Description
 
 Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
+
+=== Usage
+
+TIP: Due to the frequent updates of the driver version, please check https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository/blob/master/repository-3.0.json[repository-3.0.json] to get the latest version for webdrivers.
+
+[source,groovy]
+----
+webdriverBinaries {
+    chromedriver {
+        version = '137.0.7151.68'
+        fallbackTo32Bit = true
+    }
+    geckodriver '0.36.0'
+}
+----
+
+=== Resources
+
+* https://groovy.apache.org/geb/[Geb]
+* https://github.com/erdi/webdriver-binaries-gradle-plugin[Webdriver Binaries Gradle Plugin]
+* https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository[Webdriverextensions Maven Plugin Repository]

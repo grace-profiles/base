@@ -4,7 +4,7 @@
 
 Compiles a Grace application.
 
-NOTE: this command is delegae to Gradle's **classes** task.
+NOTE: this command is delegate to Gradle's **classes** task.
 
 === Usage
 
