@@ -1,14 +1,4 @@
-webdriverBinaries {
-    chromedriver {
-        version = '137.0.7151.68'
-        fallbackTo32Bit = true
-    }
-    geckodriver '0.36.0'
-}
-
 tasks.withType(Test) {
     systemProperty "geb.env", System.getProperty('geb.env')
     systemProperty "geb.build.reportsDir", reporting.file("geb/integrationTest")
-    systemProperty 'webdriver.chrome.driver', System.getProperty('webdriver.chrome.driver')
-    systemProperty 'webdriver.gecko.driver', System.getProperty('webdriver.gecko.driver')
 }
