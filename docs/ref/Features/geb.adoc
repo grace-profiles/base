@@ -4,29 +4,34 @@
 ====
 Because there is an issue with webdriver-binaries-gradle-plugin: https://github.com/erdi/webdriver-binaries-gradle-plugin/issues/43[Execution failed for task ':configureChromeDriverBinary' with gradle 8.7],
 so if you still want to use the plugin to configure webdriver, you should downgrade Gradle to `8.0~8.6`.
+It is recommended to use https://www.selenium.dev/documentation/selenium_manager/[Selenium Manager].
 ====
 
 === Description
 
-Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
+Adds https://groovy.apache.org/geb/[Geb 7], https://www.selenium.dev/documentation/webdriver/[Selenium WebDriver 4.x] to run functional tests.
 
 === Usage
 
-TIP: Due to the frequent updates of the driver version, please check https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository/blob/master/repository-3.0.json[repository-3.0.json] to get the latest version for webdrivers.
+Add `geb` dependencies,
 
 [source,groovy]
 ----
-webdriverBinaries {
-    chromedriver {
-        version = '137.0.7151.68'
-        fallbackTo32Bit = true
-    }
-    geckodriver '0.36.0'
+dependencies {
+    testImplementation "org.graceframework.plugins:geb"
+    testImplementation "org.seleniumhq.selenium:selenium-api"
+    testImplementation "org.seleniumhq.selenium:selenium-support"
+    testRuntimeOnly "org.seleniumhq.selenium:selenium-chrome-driver"
+    testRuntimeOnly "org.seleniumhq.selenium:selenium-firefox-driver"
 }
 ----
+
+Running the integration tests `./gradlew -Dgeb.env=chrome iT`
 
 === Resources
 
 * https://groovy.apache.org/geb/[Geb]
 * https://github.com/erdi/webdriver-binaries-gradle-plugin[Webdriver Binaries Gradle Plugin]
 * https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository[Webdriverextensions Maven Plugin Repository]
+* https://www.selenium.dev/documentation/webdriver/[Selenium WebDriver 4.x]
+* https://www.selenium.dev/documentation/selenium_manager/[Selenium Manager]
