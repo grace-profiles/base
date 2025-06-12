@@ -94,7 +94,8 @@ function addJsClass(el) {
 <td class="content">
 <div class="paragraph">
 <p>Because there is an issue with webdriver-binaries-gradle-plugin: <a href="https://github.com/erdi/webdriver-binaries-gradle-plugin/issues/43">Execution failed for task ':configureChromeDriverBinary' with gradle 8.7</a>,
-so if you still want to use the plugin to configure webdriver, you should downgrade Gradle to <code>8.0~8.6</code>.</p>
+so if you still want to use the plugin to configure webdriver, you should downgrade Gradle to <code>8.0~8.6</code>.
+It is recommended to use <a href="https://www.selenium.dev/documentation/selenium_manager/">Selenium Manager</a>.</p>
 </div>
 </td>
 </tr>
@@ -103,33 +104,27 @@ so if you still want to use the plugin to configure webdriver, you should downgr
 <div class="sect2">
 <h3 id="_description">Description</h3>
 <div class="paragraph">
-<p>Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.</p>
+<p>Adds <a href="https://groovy.apache.org/geb/">Geb 7</a>, <a href="https://www.selenium.dev/documentation/webdriver/">Selenium WebDriver 4.x</a> to run functional tests.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_usage">Usage</h3>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Due to the frequent updates of the driver version, please check <a href="https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository/blob/master/repository-3.0.json">repository-3.0.json</a> to get the latest version for webdrivers.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Add <code>geb</code> dependencies,</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy">webdriverBinaries {
-    chromedriver {
-        version = <span class="string"><span class="delimiter">'</span><span class="content">137.0.7151.68</span><span class="delimiter">'</span></span>
-        fallbackTo32Bit = <span class="predefined-constant">true</span>
-    }
-    geckodriver <span class="string"><span class="delimiter">'</span><span class="content">0.36.0</span><span class="delimiter">'</span></span>
+<pre class="CodeRay highlight"><code data-lang="groovy">dependencies {
+    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.graceframework.plugins:geb</span><span class="delimiter">&quot;</span></span>
+    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-api</span><span class="delimiter">&quot;</span></span>
+    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-support</span><span class="delimiter">&quot;</span></span>
+    testRuntimeOnly <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-chrome-driver</span><span class="delimiter">&quot;</span></span>
+    testRuntimeOnly <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-firefox-driver</span><span class="delimiter">&quot;</span></span>
 }</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Running the integration tests <code>./gradlew -Dgeb.env=chrome iT</code></p>
 </div>
 </div>
 <div class="sect2">
@@ -144,6 +139,12 @@ Due to the frequent updates of the driver version, please check <a href="https:/
 </li>
 <li>
 <p><a href="https://github.com/webdriverextensions/webdriverextensions-maven-plugin-repository">Webdriverextensions Maven Plugin Repository</a></p>
+</li>
+<li>
+<p><a href="https://www.selenium.dev/documentation/webdriver/">Selenium WebDriver 4.x</a></p>
+</li>
+<li>
+<p><a href="https://www.selenium.dev/documentation/selenium_manager/">Selenium Manager</a></p>
 </li>
 </ul>
 </div>
