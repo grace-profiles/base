@@ -56,3 +56,12 @@ Runs the applications tests.
 ----
 $ grace test-app [Test Name]
 ----
+
+=== Examples
+
+Running the integration tests with Selenium chrome driver,
+
+[source,bash]
+----
+$ grace test-app -integration -Dgeb.env=chrome
+----

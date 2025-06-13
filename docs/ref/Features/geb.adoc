@@ -26,7 +26,7 @@ dependencies {
 }
 ----
 
-Running the integration tests `./gradlew -Dgeb.env=chrome iT`
+Running the integration tests `./gradlew -Dgeb.env=chrome integrationTest` or `grace test-app -integration -Dgeb.env=chrome`
 
 === Resources
 
