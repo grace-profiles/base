@@ -1,7 +1,7 @@
 import grails.util.*
 
 description( "Creates a Groovy Script" ) {
-    usage "grace create-script [SCRIPT NAME]"
+    usage "grace create-script [Script Name]"
     argument name:'Script Name', description:"The name of the script to create", required:true
     flag name:'force', description:"Whether to overwrite existing files"
 }

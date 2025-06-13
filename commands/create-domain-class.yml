@@ -1,6 +1,6 @@
 description:
     - Creates a Domain Class
-    - usage: 'create-domain-class [domain class name]'
+    - usage: 'grace create-domain-class [Domain Class Name]'
     - argument: Domain Class Name
       description: The name of the Domain Class
     - flag: force
