@@ -95,17 +95,20 @@ function addJsClass(el) {
 <h3 id="_arguments">Arguments</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
+<col style="width: 25%;">
 <col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Plugin Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the plugin to be created</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the Plugin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +117,7 @@ function addJsClass(el) {
 <h3 id="_usage">Usage</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ grace create-plugin [Plugin Name]</code></pre>
+<pre class="CodeRay highlight"><code data-lang="console">$ grace create-plugin [Plugin Name]</code></pre>
 </div>
 </div>
 </div>
@@ -122,7 +125,8 @@ function addJsClass(el) {
 <h3 id="_examples">Examples</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grace create-plugin Taggable</code></pre>
+<pre class="CodeRay highlight"><code data-lang="console">$ grace create-plugin Taggable
+| Created app/plugins/com/examples/TaggableGrailsPlugin.groovy</code></pre>
 </div>
 </div>
 </div>

@@ -133,7 +133,7 @@ Currently, Grace framework does not provide a direct <code>upgrade</code> comman
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ sdk use grace 2023.3.0
+<pre class="CodeRay highlight"><code data-lang="console">$ sdk use grace 2023.3.0
 $ grace -v
 $ grace create-app com.example.myapp --grace-version=2023.2.0
 $ cd myapp
@@ -164,7 +164,7 @@ $ git diff</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">Profile: base
+<pre class="CodeRay highlight"><code data-lang="console">Profile: base
 Version: 2023.3.0
 Extends:
 Description: The base profile extended by other profiles
@@ -209,6 +209,35 @@ hibernate                                          Adds GORM for Hibernate to th
 json-views                                         Adds support for JSON Views to the project
 markup-views                                       Adds support for Markup Views to the project
 mongodb                                            Adds GORM for MonogoDB to the project</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are some profiles extended from <code>base</code>,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/grace-profiles/plugin">Plugin</a></p>
+</li>
+<li>
+<p><a href="https://github.com/grace-profiles/rest-api">REST API</a></p>
+</li>
+<li>
+<p><a href="https://github.com/grace-profiles/web">Web</a></p>
+</li>
+<li>
+<p><a href="https://github.com/grace-profiles/web-plugin">Web Plugin</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you want to create your own profile, it can be extended from <code>base</code> too,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy">dependencies {
+    profile "org.graceframework.profiles:base:2023.3.0-SNAPSHOT"
+}</code></pre>
 </div>
 </div>
 

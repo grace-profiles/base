@@ -95,17 +95,20 @@ function addJsClass(el) {
 <h3 id="_arguments">Arguments</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
+<col style="width: 25%;">
 <col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Required</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Class Name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the Domain Class to be created</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain Class Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the Domain Class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +117,7 @@ function addJsClass(el) {
 <h3 id="_usage">Usage</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ grace create-domain-class [Class Name]</code></pre>
+<pre class="CodeRay highlight"><code data-lang="console">$ grace create-domain-class [Domain Class Name]</code></pre>
 </div>
 </div>
 </div>
@@ -122,9 +125,8 @@ function addJsClass(el) {
 <h3 id="_examples">Examples</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy"><span class="error">$</span> grace create-domain-<span class="type">class</span>
-<span class="error">$</span> <span class="class">grace</span> create-domain-<span class="type">class</span> <span class="class">Post</span>
-<span class="error">$</span> grace create-domain-<span class="type">class</span> <span class="class">org</span>.blog.Post</code></pre>
+<pre class="CodeRay highlight"><code data-lang="console">$ grace create-domain-class Post
+$ grace create-domain-class org.blog.Post</code></pre>
 </div>
 </div>
 </div>

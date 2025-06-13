@@ -97,7 +97,7 @@ function addJsClass(el) {
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-this command is deprecated in favor of Gradle&#8217;s task: dependencies!
+this command is deprecated in favor of Gradle&#8217;s task: <strong>dependencies</strong>!
 </td>
 </tr>
 </table>
@@ -107,8 +107,11 @@ this command is deprecated in favor of Gradle&#8217;s task: dependencies!
 <h3 id="_usage">Usage</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">$ grace dependency-report</code></pre>
+<pre class="CodeRay highlight"><code data-lang="console">$ grace dependency-report</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>You can also use <code>./gradlew dependencies --configuration compileClasspath</code> or <code>./gradlew dependencies --configuration runtimeClasspath</code>.</p>
 </div>
 </div>
 </div>
