@@ -2,7 +2,7 @@ NOTE: Currently, Grace framework does not provide a direct `upgrade` command, bu
 
 The simplest way is to create two different versions of a new application, and then compare the differences between the two versions using the `git-diff` command.
 
-[source,bash]
+[source,console]
 ----
 $ sdk use grace 2023.3.0
 $ grace -v

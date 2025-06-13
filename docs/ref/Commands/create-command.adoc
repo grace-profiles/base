@@ -6,18 +6,28 @@ Creates an Application Command in the `app/commands`.
 
 === Arguments
 
-[cols="1,1"]
+[cols="1,2,1"]
 |===
 |**Name**
 |**Description**
+|**Required**
 
 |Command Name
-|The name of the command to be created
+|The name of the Command
+|true
 |===
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-command [Command Name]
+----
+
+=== Examples
+
+[source,console]
+----
+$ grace create-command Example
+| Created app/commands/com/examples/ExampleCommand.groovy
 ----

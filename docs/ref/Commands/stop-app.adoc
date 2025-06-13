@@ -27,7 +27,7 @@ Stops the running Grace application.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace stop-app
 ----

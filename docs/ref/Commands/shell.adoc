@@ -12,7 +12,7 @@ TIP: the Grace Shell also can be run from Gradle using './gradlew shell -q --con
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace shell
 ----

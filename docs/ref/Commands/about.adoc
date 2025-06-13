@@ -6,14 +6,14 @@ About your application's environment.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace about
 ----
 
 You will see an output similar to:
 
-[source,bash]
+[source,console]
 ----
 
 | About your application's environment

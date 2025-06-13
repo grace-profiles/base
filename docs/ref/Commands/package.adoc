@@ -8,7 +8,7 @@ NOTE: this command is delegae to Gradle's **assemble** task.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace package
 ----

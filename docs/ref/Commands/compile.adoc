@@ -8,7 +8,7 @@ NOTE: this command is delegate to Gradle's **classes** task.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace compile
 ----

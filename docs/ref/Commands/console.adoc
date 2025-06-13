@@ -8,7 +8,7 @@ NOTE: the Grace Console also can be run from Gradle using './gradlew console' or
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace console
 ----

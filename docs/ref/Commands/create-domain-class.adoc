@@ -6,27 +6,28 @@ Creates a Domain Class.
 
 === Arguments
 
-[cols="1,1"]
+[cols="1,2,1"]
 |===
 |**Name**
 |**Description**
+|**Required**
 
-|Class Name
-|The name of the Domain Class to be created
+|Domain Class Name
+|The name of the Domain Class
+|true
 |===
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
-$ grace create-domain-class [Class Name]
+$ grace create-domain-class [Domain Class Name]
 ----
 
 === Examples
 
-[source,groovy]
+[source,console]
 ----
-$ grace create-domain-class
 $ grace create-domain-class Post
 $ grace create-domain-class org.blog.Post
 ----

@@ -6,25 +6,28 @@ Creates a dynamic and inline plugin in the `app/plugins`.
 
 === Arguments
 
-[cols="1,1"]
+[cols="1,2,1"]
 |===
 |**Name**
 |**Description**
+|**Required**
 
 |Plugin Name
-|The name of the plugin to be created
+|The name of the Plugin
+|true
 |===
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-plugin [Plugin Name]
 ----
 
 === Examples
 
-[source,groovy]
+[source,console]
 ----
 $ grace create-plugin Taggable
+| Created app/plugins/com/examples/TaggableGrailsPlugin.groovy
 ----

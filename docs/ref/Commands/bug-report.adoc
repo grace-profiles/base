@@ -10,14 +10,14 @@ WARNING: this command is deprecated and will be removed in the future release!
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace bug-report
 ----
 
 You will see an output similar to:
 
-[source,bash]
+[source,console]
 ----
 | Warning Command [bug-report] is deprecated, and will be removed in the future release.
 | Created bug report ZIP: build/myapp-bug-report-04062024.zip

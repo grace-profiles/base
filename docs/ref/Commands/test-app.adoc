@@ -52,7 +52,7 @@ Runs the applications tests.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace test-app [Test Name]
 ----
@@ -61,7 +61,7 @@ $ grace test-app [Test Name]
 
 Running the integration tests with Selenium chrome driver,
 
-[source,bash]
+[source,console]
 ----
 $ grace test-app -integration -Dgeb.env=chrome
 ----

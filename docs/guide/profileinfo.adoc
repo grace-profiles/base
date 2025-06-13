@@ -3,7 +3,7 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source, bash]
+[source,console]
 ----
 Profile: base
 Version: 2023.3.0
@@ -50,4 +50,20 @@ hibernate                                          Adds GORM for Hibernate to th
 json-views                                         Adds support for JSON Views to the project
 markup-views                                       Adds support for Markup Views to the project
 mongodb                                            Adds GORM for MonogoDB to the project
+----
+
+There are some profiles extended from `base`,
+
+* link:https://github.com/grace-profiles/plugin[Plugin]
+* link:https://github.com/grace-profiles/rest-api[REST API]
+* link:https://github.com/grace-profiles/web[Web]
+* link:https://github.com/grace-profiles/web-plugin[Web Plugin]
+
+If you want to create your own profile, it can be extended from `base` too,
+
+[source,groovy,subs="attributes"]
+----
+dependencies {
+    profile "org.graceframework.profiles:base:{version}"
+}
 ----

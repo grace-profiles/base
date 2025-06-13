@@ -6,7 +6,7 @@ Prints statistics about the project.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace stats
 ----

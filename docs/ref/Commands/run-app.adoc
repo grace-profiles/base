@@ -35,7 +35,7 @@ Runs a Grace application.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace run-app
 

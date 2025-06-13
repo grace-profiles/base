@@ -6,18 +6,20 @@ Executes Groovy scripts in a Grace context.
 
 === Arguments
 
-[cols="1,1"]
+[cols="1,2,1"]
 |===
 |**Name**
 |**Description**
+|**Required**
 
 |Script Name
 |The paths of scripts relative to the project root
+|true
 |===
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
-$ grace run-script [SCRIPT NAME]
+$ grace run-script [Script Name]
 ----

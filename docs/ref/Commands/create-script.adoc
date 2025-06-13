@@ -6,18 +6,20 @@ Creates a Groovy script.
 
 === Arguments
 
-[cols="1,1"]
+[cols="1,2,1"]
 |===
 |**Name**
 |**Description**
+|**Required**
 
 |Script Name
-|The name of the plugin to be created
+|The name of the Script to create
+|true
 |===
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace create-script [Script Name]
 ----
@@ -26,7 +28,7 @@ $ grace create-script [Script Name]
 
 The command:
 
-[source,bash]
+[source,console]
 ----
 $ grace create-script my-script
 ----

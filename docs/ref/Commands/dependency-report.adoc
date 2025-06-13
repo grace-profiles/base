@@ -4,11 +4,13 @@
 
 Prints out the Grace application's dependencies.
 
-WARNING: this command is deprecated in favor of Gradle's task: dependencies!
+WARNING: this command is deprecated in favor of Gradle's task: **dependencies**!
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace dependency-report
 ----
+
+You can also use `./gradlew dependencies --configuration compileClasspath` or `./gradlew dependencies --configuration runtimeClasspath`.

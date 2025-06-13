@@ -10,7 +10,7 @@ Creates a JAR or WAR archive for production deployment.
 
 === Usage
 
-[source,bash]
+[source,console]
 ----
 $ grace [ENV] assemble
 ----
