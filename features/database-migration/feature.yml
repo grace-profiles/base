@@ -1,4 +1,4 @@
-description: Grace Database Migration Plugin
+description: Adds support for Grace Database Migration Plugin
 dependencies:
     - scope: build
       coords: "org.graceframework.plugins:database-migration:@grace-plugin-database-migration.version@"
