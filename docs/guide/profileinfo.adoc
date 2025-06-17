@@ -39,12 +39,12 @@ Provided Features:
 ----------------------------------------------------------------------------------------------------
 Name                           Required  Defaults  Description
 ----------------------------------------------------------------------------------------------------
-asset-pipeline                                     Adds Asset Pipeline to a Grace project
+asset-pipeline                                     Adds support for the Asset Pipeline to the Grace project
 async                                              Adds support for the Grace Async
 cache                                              Adds support for the Grace Cache abstraction
-database-migration                                 Grace Database Migration Plugin
+database-migration                                 Adds support for Grace Database Migration Plugin
 events                                             Adds support for the Grace EventBus abstraction
-geb                                                Adds Geb 7, WebDriver 4.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
+geb                                                Adds Geb 7, Selenium WebDriver 4.x to run functional tests
 gsp                                                Adds support for GSP to the project
 hibernate                                          Adds GORM for Hibernate to the project
 json-views                                         Adds support for JSON Views to the project
