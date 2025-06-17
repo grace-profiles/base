@@ -1,4 +1,4 @@
-description: Adds Asset Pipeline to a Grace project
+description: Adds support for the Asset Pipeline to the Grace project
 build:
     plugins:
         - org.graceframework.asset-pipeline
