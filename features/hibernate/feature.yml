@@ -1,4 +1,6 @@
 description: Adds GORM for Hibernate to the project
 dependencies:
+    - scope: build
+      coords: "org.graceframework.plugins:hibernate:@grace-plugin-hibernate.version@"
     - scope: compile
       coords: "org.graceframework.plugins:hibernate"
