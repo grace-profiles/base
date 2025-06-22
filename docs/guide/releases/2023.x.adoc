@@ -1,3 +1,19 @@
+=== 2023.3.1
+
+link:{github}/releases/tag/v2023.3.1[release notes]
+
+🐞 Bug Fixes
+
+* Make `schema-export` available to use: should add `hibernate` plugin to build classpath link:{github}/issues/69[#69]
+
+🛠 Improvements
+
+* Update documentation - Update release notes
+
+⚙️ Tasks
+
+* Release v2023.3.1
+
 === 2023.3.0
 
 link:{github}/releases/tag/v2023.3.0[release notes]
