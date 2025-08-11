@@ -1,6 +1,6 @@
 package @grace.codegen.defaultPackage@
 
-class BootStrap {
+class Bootstrap {
 
     def init() {
     }
