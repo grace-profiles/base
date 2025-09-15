@@ -44,10 +44,6 @@ Runs the applications tests.
 |clean
 |Re-run all tests (cleanTest cleanIntegrationTest target)
 |boolean
-
-|continuous
-|Monitor the project for changes and reruns tests automatically on each change
-|boolean
 |===
 
 === Usage
