@@ -1,7 +1,7 @@
 description: Adds Apache Geb 8.0, Selenium WebDriver 4.x to run functional tests
 dependencies:
     - scope: testCompile
-      coords: org.graceframework.plugins:geb
+      coords: org.graceframework:grace-plugin-geb
     - scope: testCompile
       coords: org.seleniumhq.selenium:selenium-api
     - scope: testCompile
