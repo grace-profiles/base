@@ -1,4 +1,4 @@
 description: Adds support for the Grace Cache abstraction
 dependencies:
     - scope: compile
-      coords: "org.graceframework.plugins:cache"
+      coords: "org.graceframework:grace-plugin-cache"
