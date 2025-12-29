@@ -1,7 +1,0 @@
-description: Adds support for Markup Views to the project
-build:
-    plugins:
-        - org.graceframework.grace-markup
-dependencies:
-    - scope: compile
-      coords: "org.graceframework:grace-views-markup"

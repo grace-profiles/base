@@ -1,7 +1,0 @@
-description: Adds support for JSON Views to the project
-build:
-    plugins:
-        - org.graceframework.grace-json
-dependencies:
-    - scope: compile
-      coords: "org.graceframework:grace-views-json"
