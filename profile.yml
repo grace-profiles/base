@@ -15,6 +15,4 @@ dependencies:
     - scope: build
       coords: "org.graceframework:grace-gradle-plugin:@grace.version@"
     - scope: testCompile
-      coords: "org.graceframework:grace-test-support"
-    - scope: testCompile
-      coords: "org.mockito:mockito-core"
+      coords: "org.graceframework:grace-boot-test"
