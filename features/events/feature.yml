@@ -1,4 +1,4 @@
 description: Adds support for the Grace EventBus abstraction
 dependencies:
     - scope: compile
-      coords: "org.graceframework:grace-plugin-events"
+      coords: "org.graceframework:grace-boot-events"
