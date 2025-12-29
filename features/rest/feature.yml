@@ -1,0 +1,8 @@
+description: Adds support for JSON and Markup Views to the project
+build:
+    plugins:
+        - org.graceframework.grace-json
+        - org.graceframework.grace-markup
+dependencies:
+    - scope: compile
+      coords: "org.graceframework:grace-boot-rest"
