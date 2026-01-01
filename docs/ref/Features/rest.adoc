@@ -1,0 +1,20 @@
+== REST
+
+=== Description
+
+Adds support for JSON Views and Markup Views to the project.
+
+=== Usage
+
+Add `grace-boot-rest` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-rest"
+}
+----
+
+=== Resources
+
+* https://graceframework.org/grace-views/7.0.x/[Grace Views]

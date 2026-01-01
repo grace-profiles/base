@@ -2,8 +2,19 @@
 
 === Description
 
-Adds GORM for Hibernate to the project.
+Adds GORM Data Hibernate to the project.
+
+=== Usage
+
+Add `grace-boot-hibernate` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-hibernate"
+}
+----
 
 === Resources
 
-* https://graceframework.org/grace-data-hibernate/2023.3.x/[Grace Data Hibernate]
+* https://graceframework.org/grace-data-hibernate/2024.0.x/[Grace Data Hibernate]

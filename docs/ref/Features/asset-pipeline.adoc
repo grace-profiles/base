@@ -4,6 +4,21 @@
 
 Adds Asset Pipeline to a Grace project.
 
+=== Usage
+
+Add `asset-pipeline-plugin` dependency to build.gradle,
+
+[source,groovy]
+----
+plugins {
+    id "org.graceframework.asset-pipeline"
+}
+
+dependencies {
+    implementation "org.graceframework.plugins:asset-pipeline-plugin"
+}
+----
+
 === Resources
 
-* https://plugins.graceframework.org/grace-asset-pipeline/6.3.x/[Grace Asset Pipeline]
+* https://plugins.graceframework.org/grace-asset-pipeline/7.0.x/[Grace Asset Pipeline]

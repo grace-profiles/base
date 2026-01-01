@@ -4,6 +4,17 @@
 
 Adds support for the Grace Async.
 
+=== Usage
+
+Add `grace-boot-async` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-async"
+}
+----
+
 === Resources
 
-* https://graceframework.org/grace-async/6.3.x/[Grace Async Framework]
+* https://graceframework.org/grace-async/7.0.x/[Grace Async Framework]

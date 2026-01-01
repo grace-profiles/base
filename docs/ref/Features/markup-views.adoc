@@ -1,9 +1,0 @@
-== markup-views
-
-=== Description
-
-Adds support for Markup Views to the project.
-
-=== Resources
-
-* https://graceframework.org/grace-views/6.3.x/[Grace Views]

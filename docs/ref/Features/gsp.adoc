@@ -3,3 +3,14 @@
 === Description
 
 Adds support for GSP to the project.
+
+=== Usage
+
+Add `grace-plugin-gsp` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-plugin-gsp"
+}
+----

@@ -4,6 +4,17 @@
 
 Adds GORM for MonogoDB to the project.
 
+=== Usage
+
+Add `grace-boot-mongodb` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-mongodb"
+}
+----
+
 === Resources
 
-* https://graceframework.org/grace-data-mongodb/2023.3.x/[Grace Data MonogoDB]
+* https://graceframework.org/grace-data-mongodb/2024.0.x/[Grace Data MonogoDB]

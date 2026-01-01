@@ -4,6 +4,17 @@
 
 Adds support for the Grace EventBus abstraction.
 
+=== Usage
+
+Add `grace-boot-events` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-events"
+}
+----
+
 === Resources
 
-* https://graceframework.org/grace-async/6.3.x/[Grace Events Framework]
+* https://graceframework.org/grace-async/7.0.x/[Grace Events Framework]
