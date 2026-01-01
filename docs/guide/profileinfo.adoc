@@ -3,10 +3,10 @@ You can always get information about the provided command and available features
 
 You will see an output similar to:
 
-[source,console]
+[source,console,subs="attributes"]
 ----
 Profile: base
-Version: 2023.3.0
+Version: {version}
 Extends:
 Description: The base profile extended by other profiles
 
@@ -44,12 +44,11 @@ async                                              Adds support for the Grace As
 cache                                              Adds support for the Grace Cache abstraction
 database-migration                                 Adds support for Grace Database Migration Plugin
 events                                             Adds support for the Grace EventBus abstraction
-geb                                                Adds Geb 7, Selenium WebDriver 4.x to run functional tests
+geb                                                Adds Apache Geb 8.0, Selenium WebDriver 4.x to run functional tests
 gsp                                                Adds support for GSP to the project
 hibernate                                          Adds GORM for Hibernate to the project
-json-views                                         Adds support for JSON Views to the project
-markup-views                                       Adds support for Markup Views to the project
 mongodb                                            Adds GORM for MonogoDB to the project
+rest                                               Adds support for JSON and Markup Views to the project
 ----
 
 There are some profiles extended from `base`,
