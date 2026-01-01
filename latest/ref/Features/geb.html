@@ -107,22 +107,18 @@ It is recommended to use <a href="https://www.selenium.dev/documentation/seleniu
 <div class="sect2">
 <h3 id="_description">Description</h3>
 <div class="paragraph">
-<p>Adds <a href="https://groovy.apache.org/geb/">Geb 7</a>, <a href="https://www.selenium.dev/documentation/webdriver/">Selenium WebDriver 4.x</a> to run functional tests.</p>
+<p>Adds <a href="https://groovy.apache.org/geb/">Geb 8</a>, <a href="https://www.selenium.dev/documentation/webdriver/">Selenium WebDriver 4.x</a> to run functional tests.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_usage">Usage</h3>
 <div class="paragraph">
-<p>Add <code>geb</code> dependencies,</p>
+<p>Add <code>grace-plugin-geb</code> dependency to build.gradle,</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="CodeRay highlight"><code data-lang="groovy">dependencies {
-    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.graceframework.plugins:geb</span><span class="delimiter">&quot;</span></span>
-    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-api</span><span class="delimiter">&quot;</span></span>
-    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-support</span><span class="delimiter">&quot;</span></span>
-    testRuntimeOnly <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-chrome-driver</span><span class="delimiter">&quot;</span></span>
-    testRuntimeOnly <span class="string"><span class="delimiter">&quot;</span><span class="content">org.seleniumhq.selenium:selenium-firefox-driver</span><span class="delimiter">&quot;</span></span>
+    testImplementation <span class="string"><span class="delimiter">&quot;</span><span class="content">org.graceframework:grace-plugin-geb</span><span class="delimiter">&quot;</span></span>
 }</code></pre>
 </div>
 </div>
@@ -261,13 +257,10 @@ It is recommended to use <a href="https://www.selenium.dev/documentation/seleniu
                             <div class="menu-item"><a href="../../ref/Features/hibernate.html">hibernate</a>
                             </div>
                             
-                            <div class="menu-item"><a href="../../ref/Features/json-views.html">json-views</a>
-                            </div>
-                            
-                            <div class="menu-item"><a href="../../ref/Features/markup-views.html">markup-views</a>
-                            </div>
-                            
                             <div class="menu-item"><a href="../../ref/Features/mongodb.html">mongodb</a>
+                            </div>
+                            
+                            <div class="menu-item"><a href="../../ref/Features/rest.html">rest</a>
                             </div>
                             
                         </div>
