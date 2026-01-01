@@ -5,8 +5,8 @@
 For further reference, please consider the following sections:
 
 * [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/3.3/gradle-plugin/index.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.3/reference/web/index.html)
+* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/3.4/gradle-plugin/index.html)
+* [Spring Web](https://docs.spring.io/spring-boot/3.4/reference/web/index.html)
 * [Groovy Documentation](https://groovy-lang.org/documentation.html)
 * [Spock Reference Documentation](https://spockframework.org/spock/docs/2.3/index.html)
 * [The Book Of Geb](https://groovy.apache.org/geb/manual/current/)
