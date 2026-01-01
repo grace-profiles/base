@@ -1,0 +1,54 @@
+=== 2024.0.0-M1
+
+link:{github}/releases/tag/v2024.0.0-M1[release notes]
+
+⭐️ New Features
+
+* Remove the explicit dependencies on selenium of geb feature link:{github}/issues/98[#98]
+* Use grace-boot-test link:{github}/issues/96[#96]
+* Feature: remove json-views and markup-views features link:{github}/issues/95[#95]
+* Feature: add REST feature link:{github}/issues/94[#94]
+* Feature: add taglibs to gsp feature link:{github}/issues/93[#93]
+* Feature: use grace-boot-events instead of the events plugin link:{github}/issues/92[#92]
+* Feature: use grace-boot-cache instead of the cache plugin link:{github}/issues/91[#91]
+* Feature: use grace-boot-async instead of the async plugin link:{github}/issues/90[#90]
+* Feature: change the coords of mongodb plugin link:{github}/issues/89[#89]
+* Feature: change the coords of markup-views plugin link:{github}/issues/88[#88]
+* Feature: change the coords of json-views plugin link:{github}/issues/87[#87]
+* Feature: change the coords of hibernate plugin link:{github}/issues/86[#86]
+* Feature: change the coords of geb plugin link:{github}/issues/85[#85]
+* Feature: change the coords of events plugin link:{github}/issues/84[#84]
+* Feature: change the coords of database-migration plugin link:{github}/issues/83[#83]
+* Feature: change the coords of cache plugin link:{github}/issues/82[#82]
+* Feature: change the coords of async plugin link:{github}/issues/81[#81]
+
+🛠 Improvements
+
+* Add release notes for 2024.0.0-M1
+* Update docs for features
+* Update docs for features
+* Update profile info
+* Update doc.properties to switch to 2024.0.x branch
+* Skeleton: update Gradle Wrapper to 8.14.3 link:{github}/issues/80[#80]
+* Feature: update the description for 'geb' and now support Apache Geb 8.0 link:{github}/issues/78[#78]
+* Skeleton: move `Application.groovy` from `app\init` to `app\boot` link:{github}/issues/76[#76]
+* Skeleton: move `Bootstrap.groovy` from `app\init` to `app\boot` link:{github}/issues/75[#75]
+* Skeleton: rename to `Bootstrap.groovy` link:{github}/issues/74[#74]
+* Update README
+  - Update document links
+  - Update badge version of Grace
+  - Update supported versions
+
+* Update README - Update badge version of Grace, Groovy
+* Migrate to Central Portal OSSRH Staging API link:{github}/issues/71[#71]
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.0.0-M1 link:{github}/issues/73[#73]
+* Upgrade to Gradle 8.14.3 link:{github}/issues/79[#79]
+
+⚙️ Tasks
+
+* Release v2024.0.0-M1
+* Update GitHub workflows - Switch to 2024.0.x
+* Next development version: 2024.0.0-SNAPSHOT
