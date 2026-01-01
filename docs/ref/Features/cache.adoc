@@ -4,6 +4,17 @@
 
 Adds support for the Grace Cache abstraction.
 
+=== Usage
+
+Add `grace-boot-cache` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-boot-cache"
+}
+----
+
 === Resources
 
 * https://graceframework.org/grace-cache/7.0.x/[Grace Cache]

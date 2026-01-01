@@ -2,7 +2,18 @@
 
 === Description
 
-Adds Grace Database Migration Plugin.
+Adds Grace Database Migration Plugin to project.
+
+=== Usage
+
+Add `grace-plugin-database-migration` dependency to build.gradle,
+
+[source,groovy]
+----
+dependencies {
+    implementation "org.graceframework:grace-plugin-database-migration"
+}
+----
 
 === Resources
 
