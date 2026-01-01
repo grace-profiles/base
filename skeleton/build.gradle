@@ -13,19 +13,13 @@ configurations {
 }
 
 dependencies {
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    developmentOnly "org.springframework.boot:spring-boot-devtools"
 @dependencies@
 }
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
-    }
-}
-
-tasks.withType(Jar) {
-    configure {
-        duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
 
