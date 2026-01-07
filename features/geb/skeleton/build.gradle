@@ -1,4 +1,4 @@
 tasks.withType(Test) {
     systemProperty "geb.env", System.getProperty('geb.env')
-    systemProperty "geb.build.reportsDir", reporting.file("geb/integrationTest")
+    systemProperty "geb.build.reportsDir", reporting.baseDirectory.file("geb/integrationTest")
 }
