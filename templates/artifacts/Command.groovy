@@ -1,5 +1,5 @@
 @artifact.package@
-import grails.dev.commands.*
+import grails.cli.commands.*
 
 class @artifact.name@Command implements GrailsApplicationCommand {
 
