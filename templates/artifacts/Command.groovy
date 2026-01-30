@@ -1,9 +1,11 @@
 @artifact.package@
-import grails.cli.commands.*
+import grails.cli.command.*
 
-class @artifact.name@Command implements GrailsApplicationCommand {
+class @artifact.name@Command implements ApplicationCommand {
 
-    boolean handle() {
-        return true
+    @Override
+    boolean handle(ExecutionContext executionContext) {
+        true
     }
+
 }
