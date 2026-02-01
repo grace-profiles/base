@@ -9,6 +9,6 @@
     </root>
 
     <logger name="org.hibernate.orm.deprecation" level="error" />
-    <logger name="@grace.codegen.defaultPackage@.Application" level="debug" />
+    <logger name="@grace.codegen.defaultPackage@.Application" level="info" />
 
 </configuration>
