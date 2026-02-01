@@ -1,3 +1,33 @@
+=== 2024.0.0-RC1
+
+link:{github}/releases/tag/v2024.0.0-RC1[release notes]
+
+⭐️ New Features
+
+* Use the new package name of CLI Command and prefer to use ApplicationCommand #102
+* Skeleton: move `Application.groovy` from `app/boot` to `src/main/groovy` #101
+
+🛠 Improvements
+
+* Add release notes for 2024.0.0-RC1
+* Update copyright in doc.properties
+* Skeleton: update Gradle Wrapper to 8.14.4 #104
+* Update `test-app`: temporarily remove support for completer #103
+* Update the Command template #102
+* Add Gradle task: 'docs' and depend on 'publishGuide'
+* Fix deprecation warnings due to reporting.file() in Gradle 9 #99
+* Skeleton: update build.gradle
+* Update the description of command 'create-script'
+* Update guides
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.0.0-M2 #100
+
+⚙️ Tasks
+
+* Release v2024.0.0-RC1
+
 === 2024.0.0-M1
 
 link:{github}/releases/tag/v2024.0.0-M1[release notes]
