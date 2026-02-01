@@ -1,6 +1,6 @@
 description("Runs the applications tests") {
     usage "grace test-app [TEST NAME]"
-    completer TestsCompleter
+    // completer TestsCompleter
     synonyms 'test'
     argument name:"Test Name", description:"The name of the test to run (optional)", required:false
     flag name:'debug-jvm', description:"Starts the JVM in debug mode allowing attachment of a remote debugger"
