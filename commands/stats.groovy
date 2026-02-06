@@ -32,7 +32,7 @@ def pathToInfo = [
     [name: "Domain Classes",     path: "^app.domain",                  filetype: [".groovy"]],
     [name: "Jobs",               path: "^app.job",                     filetype: [".groovy"]],
     [name: "Services",           path: "^app.services",                filetype: ["Service.groovy"]],
-    [name: "Tag Libraries",      path: "^app.taglib",                  filetype: ["TagLib.groovy"]],
+    [name: "Tag Libraries",      path: "^app.taglibs",                 filetype: ["TagLib.groovy"]],
     [name: "Helpers",            path: "^src.main.groovy",             filetype: [".groovy", ".java"]],
     [name: "Unit Tests",         path: "^src.test.groovy",             filetype: [".groovy", ".java"]],
     [name: "Integration Tests",  path: "^src.integration-test.groovy", filetype: [".groovy", ".java"]],
