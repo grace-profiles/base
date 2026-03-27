@@ -1,3 +1,23 @@
+=== 2024.0.0
+
+link:{github}/releases/tag/v2024.0.0[release notes]
+
+🛠 Improvements
+
+* Update README - Update versions of Grace and Groovy badges
+* Add release notes for 2024.0.0
+* Code formatting for all templates link:{github}/issues/110[#110]
+* Code formatting for all commands link:{github}/issues/109[#109]
+* Update `test-app`: restore support for completer link:{github}/issues/108[#108]
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.0.0-RC1 link:{github}/issues/107[#107]
+
+⚙️ Tasks
+
+* Release v2024.0.0
+
 === 2024.0.0-RC1
 
 link:{github}/releases/tag/v2024.0.0-RC1[release notes]
@@ -22,9 +42,6 @@ link:{github}/releases/tag/v2024.0.0-RC1[release notes]
 * Update the Command template link:{github}/issues/102[#102]
 * Add Gradle task: 'docs' and depend on 'publishGuide'
 * Fix deprecation warnings due to reporting.file() in Gradle 9 link:{github}/issues/99[#99]
-* Skeleton: update build.gradle
-* Update the description of command 'create-script'
-* Update guides
 
 🚀 Dependency Upgrades
 
@@ -61,6 +78,9 @@ link:{github}/releases/tag/v2024.0.0-M1[release notes]
 
 🛠 Improvements
 
+* Skeleton: update build.gradle
+* Update the description of command 'create-script'
+* Update guides
 * Add release notes for 2024.0.0-M1
 * Update docs for features
 * Update docs for features
