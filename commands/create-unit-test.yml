@@ -1,12 +1,12 @@
 description:
-    - Creates a Unit Test
-    - usage: 'grace create-unit-test [Test Name]'
-    - completer: org.grails.cli.interactive.completers.AllClassCompleter
-    - argument: "Unit Test Name"
-      description: "The name of the Unit Test"
-    - flag: force
-      description: Whether to override existing files
+  - Creates a Unit Test
+  - usage: "grace create-unit-test [Test Name]"
+  - completer: org.grails.cli.command.completers.AllClassCompleter
+  - argument: "Unit Test Name"
+    description: "The name of the Unit Test"
+  - flag: force
+    description: Whether to override existing files
 steps:
- - command: render
-   template: templates/testing/Generic.groovy
-   destination: src/test/groovy/@artifact.package.path@/@artifact.name@Spec.groovy
+  - command: render
+    template: templates/testing/Generic.groovy
+    destination: src/test/groovy/@artifact.package.path@/@artifact.name@Spec.groovy

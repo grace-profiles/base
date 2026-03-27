@@ -1,24 +1,25 @@
-description("Runs a Grace application") {
-    usage "grace run-app"
+description('Runs a Grace application') {
+    usage 'grace run-app'
     synonyms 'run'
-    flag name:'debug-jvm', description:"Starts the JVM in debug mode allowing attachment of a remote debugger"
-    flag name:'https', description:"Starts Grace in HTTPS mode on port 8443"
-    flag name:'port', description:"Specifies the port which to start Grace on (defaults to 8080 or 8443 for HTTPS)"
-    flag name:'host', description:"Specifies the host to bind to"
-    flag name:'verbose', description:"Show more output from the build during startup"
+    flag name: 'debug-jvm', description: 'Starts the JVM in debug mode allowing attachment of a remote debugger'
+    flag name: 'https', description: 'Starts Grace in HTTPS mode on port 8443'
+    flag name: 'port', description: 'Specifies the port which to start Grace on (defaults to 8080 or 8443 for HTTPS)'
+    flag name: 'host', description: 'Specifies the host to bind to'
+    flag name: 'verbose', description: 'Show more output from the build during startup'
 }
 
-if(!commandLine.isEnvironmentSet()) {
+if (!commandLine.isEnvironmentSet()) {
     System.setProperty('grails.env', 'dev')
-} else {
+}
+else {
     System.setProperty('grails.env', commandLine.environment)
 }
+
 // add debug flag if present
 try {
-
     def arguments = []
 
-    if( !(flag('verbose') || console.verbose)) {
+    if (!(flag('verbose') || console.verbose)) {
         arguments << '--quiet'
     }
 
@@ -35,27 +36,27 @@ try {
 
     arguments << "-Dgrails.run.active=true"
 
-    if(port) {
+    if (port) {
         arguments << "-Dgrails.server.port=$port"
     }
-    if(host) {
+    if (host) {
         arguments << "-Dgrails.server.address=$host"
     }
 
-    if(flag('https')) {
-        if(!port) {
-            arguments << "-Dgrails.server.port=8443"
+    if (flag('https')) {
+        if (!port) {
+            arguments << '-Dgrails.server.port=8443'
         }
-        if(!System.getProperty('grails.server.ssl.key-store')) {
-            def keystoreDir = new File(buildDir, "ssl")
+        if (!System.getProperty('grails.server.ssl.key-store')) {
+            def keystoreDir = new File(buildDir, 'ssl')
             def keystoreFile = new File(keystoreDir, 'keystore')
 
             boolean keyStoreParametersAvailable = false
-            if(!keystoreFile.exists()) {
-                console.updateStatus "Generating SSL certificate"
-                if ( createSSLCertificate(keystoreDir) ) {
+            if (!keystoreFile.exists()) {
+                console.updateStatus 'Generating SSL certificate'
+                if (createSSLCertificate(keystoreDir)) {
                     keyStoreParametersAvailable = true
-                    console.updateStatus "Generated SSL certificate"
+                    console.updateStatus 'Generated SSL certificate'
                 }
                 else {
                     console.warn "Unable to automatically generate SSL certificate, manual configuration required. Set 'server.ssl.key-store' in application.yml"
@@ -64,55 +65,55 @@ try {
             else {
                 keyStoreParametersAvailable = true
             }
-            if(keyStoreParametersAvailable) {
+            if (keyStoreParametersAvailable) {
                 arguments << "-Dgrails.server.ssl.key-store=${keystoreFile}"
-                arguments << "-Dgrails.server.ssl.key-store-password=123456"
-                arguments << "-Dgrails.server.ssl.key-password=123456"
+                arguments << '-Dgrails.server.ssl.key-store-password=123456'
+                arguments << '-Dgrails.server.ssl.key-password=123456'
             }
         }
     }
 
-    console.updateStatus "Running application..."
+    console.updateStatus 'Running application...'
 
-    if(!org.grails.cli.GrailsCli.isInteractiveModeActive()) {
-        if(flag('debug-jvm')) {
-            gradle."bootRun --debug-jvm"(*arguments)
+    if (!org.grails.cli.GrailsCli.isInteractiveModeActive()) {
+        if (flag('debug-jvm')) {
+            gradle.'bootRun --debug-jvm'(*arguments)
         }
         else {
-            gradle."bootRun"(*arguments)
+            gradle.'bootRun'(*arguments)
         }
     }
     else {
         System.setProperty('org.gradle.console', 'plain')
         def future
-        if(flag('debug-jvm')) {
+        if (flag('debug-jvm')) {
             future = gradle.async."bootRun --debug-jvm"(*arguments)
         }
         else {
             future = gradle.async."bootRun"(*arguments)
         }
 
-        while(!isServerAvailable(host ?: "localhost", port ?: 8080)) {
+        while (!isServerAvailable(host ?: 'localhost', port ?: 8080)) {
             console.indicateProgress()
-            if(future.done) {
+            if (future.done) {
                 // the server exited for some reason, so break
-                if(future.get() instanceof Throwable) {
+                if (future.get() instanceof Throwable) {
                     break
                 }
             }
-            sleep(100);
+            sleep(100)
         }
 
-        System.setProperty("run-app.running", "true")
-        if(!Boolean.getBoolean("run-app.shutdown.hook.registered")) {
-            System.setProperty("run-app.shutdown.hook.registered", "true")
+        System.setProperty('run-app.running', 'true')
+
+        if (!Boolean.getBoolean('run-app.shutdown.hook.registered')) {
+            System.setProperty('run-app.shutdown.hook.registered', 'true')
             addShutdownHook {
-                if(Boolean.getBoolean("run-app.running")) {
+                if (Boolean.getBoolean('run-app.running')) {
                     try {
                         stopApp()
                     }
-                    catch(e) {
-                        // ignore
+                    catch (ignore) {
                     }
                 }
             }
@@ -123,37 +124,36 @@ try {
     }
 
 }
-catch(org.gradle.tooling.BuildCancelledException e) {
-    console.updateStatus("Application stopped")
+catch (org.gradle.tooling.BuildCancelledException ignore) {
+    console.updateStatus('Application stopped')
     return true
 }
-catch(Throwable e) {
-    console.error "Failed to start server", e
+catch (Throwable e) {
+    console.error 'Failed to start server', e
     return false
 }
 
 protected boolean createSSLCertificate(File keystoreDir) {
-
     if (!keystoreDir.exists() && !keystoreDir.mkdir()) {
         throw new RuntimeException("Unable to create keystore folder: $keystoreDir.canonicalPath")
     }
 
     def keyToolClass = getKeyToolClass()
-    if(keyToolClass) {
+    if (keyToolClass) {
         try {
-            def keystoreFile = new File(keystoreDir, "keystore")
+            def keystoreFile = new File(keystoreDir, 'keystore')
             keyToolClass.main(
-                "-genkey",
-                "-alias", "localhost",
-                "-dname", "CN=localhost,OU=Test,O=Test,C=US",
-                "-keyalg", "RSA",
-                "-validity", "365",
-                "-storepass", "key",
-                "-keystore", keystoreFile.absolutePath,
-                "-storepass", "123456",
-                "-keypass", "123456")
+                '-genkey',
+                '-alias', 'localhost',
+                '-dname', 'CN=localhost,OU=Test,O=Test,C=US',
+                '-keyalg', 'RSA',
+                '-validity', '365',
+                '-storepass', 'key',
+                '-keystore', keystoreFile.absolutePath,
+                '-storepass', '123456',
+                '-keypass', '123456')
         }
-        catch(Throwable e) {
+        catch (Throwable ignore) {
             return false
         }
 
@@ -168,20 +168,20 @@ protected Class getKeyToolClass() {
     try {
         try {
             // Sun JDK 8
-            return Class.forName( 'sun.security.tools.keytool.Main' )
+            return Class.forName('sun.security.tools.keytool.Main')
         }
-        catch(ClassNotFoundException e1) {
+        catch (ClassNotFoundException e1) {
             try {
                 // Sun pre-JDK 8
-                return Class.forName( 'sun.security.tools.KeyTool' )
+                return Class.forName('sun.security.tools.KeyTool')
             }
             catch (ClassNotFoundException e2) {
                 // no try/catch for this one, if neither is found let it fail
-                return Class.forName( 'com.ibm.crypto.tools.KeyTool' )
+                return Class.forName('com.ibm.crypto.tools.KeyTool')
             }
         }
     }
-    catch(Throwable e) {
+    catch (Throwable ignore) {
         return null
     }
 }

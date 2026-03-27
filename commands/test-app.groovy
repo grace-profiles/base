@@ -1,18 +1,19 @@
-description("Runs the applications tests") {
-    usage "grace test-app [TEST NAME]"
-    completer org.grails.cli.command.completers.TestsCompleter
+description('Runs the applications tests') {
+    usage 'grace test-app [TEST NAME]'
+    // completer org.grails.cli.command.completers.TestsCompleter
     synonyms 'test'
-    argument name:"Test Name", description:"The name of the test to run (optional)", required:false
-    flag name:'debug-jvm', description:"Starts the JVM in debug mode allowing attachment of a remote debugger"
-    flag name:'unit', description:"Run unit tests (test target)"
-    flag name:'integration', description:"Run integration tests (integrationTest target)"
-    flag name:'clean', description:"Re-run all tests (cleanTest cleanIntegrationTest target)"
+    argument name: 'Test Name', description: 'The name of the test to run (optional)', required: false
+    flag name: 'debug-jvm', description: 'Starts the JVM in debug mode allowing attachment of a remote debugger'
+    flag name: 'unit', description: 'Run unit tests (test target)'
+    flag name: 'integration', description: 'Run integration tests (integrationTest target)'
+    flag name: 'clean', description: 'Re-run all tests (cleanTest cleanIntegrationTest target)'
 }
 
 // configure environment to test is not specified
-if(!commandLine.isEnvironmentSet()) {
+if (!commandLine.isEnvironmentSet()) {
     System.setProperty('grails.env', 'test')
-} else {
+}
+else {
     System.setProperty('grails.env', commandLine.environment)
 }
 
@@ -22,16 +23,16 @@ boolean debugJvm = flag('debug-jvm')
 
 def handleTestPhase = { targetName ->
     def args = []
-    if(flag('clean')) {
+    if (flag('clean')) {
         args << "clean${targetName.capitalize()}"
     }
     args << targetName
-    if(testsFilter) {
+    if (testsFilter) {
         args << testsFilter
     }
     // add debug flag if present
-    if(debugJvm) {
-        args << "--debug-jvm"
+    if (debugJvm) {
+        args << '--debug-jvm'
     }
     args
 }
@@ -39,13 +40,13 @@ def handleTestPhase = { targetName ->
 def gradleArgs = []
 
 boolean executeUnitTests = flag('unit') || !flag('integration')
-if(executeUnitTests) {
+if (executeUnitTests) {
     gradleArgs.addAll handleTestPhase('test')
 }
 
-boolean hasIntegrationTests = file("src/integration-test").isDirectory()
+boolean hasIntegrationTests = file('src/integration-test').isDirectory()
 boolean executeIntegrationTests = hasIntegrationTests && (flag('integration') || !flag('unit'))
-if(executeIntegrationTests) {
+if (executeIntegrationTests) {
     gradleArgs.addAll handleTestPhase('integrationTest')
 }
 
@@ -55,14 +56,15 @@ runTests = { List args ->
         additionalArguments << "-D${key}=$value".toString()
     }
 
-    additionalArguments << "-Dgrails.run.active=true"
+    additionalArguments << '-Dgrails.run.active=true'
 
     try {
         gradle."${args.join(' ')}"(*additionalArguments)
-        addStatus "Tests PASSED"
+        addStatus 'Tests PASSED'
         return true
-    } catch(e) {
-        console.error "Tests FAILED", "Test execution failed"
+    }
+    catch (ignore) {
+        console.error 'Tests FAILED', 'Test execution failed'
         return false
     }
 }

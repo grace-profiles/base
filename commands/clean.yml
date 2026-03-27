@@ -1,8 +1,8 @@
 description: Cleans a Grace application's compiled sources
 minArguments: 0
 usage: |
- clean
+  clean
 steps:
- - command: gradle
-   tasks:
-     - clean
+  - command: gradle
+    tasks:
+      - clean

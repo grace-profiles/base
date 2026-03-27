@@ -7,7 +7,7 @@ import grails.util.GrailsVersion
 import org.grails.config.CodeGenConfig
 
 description("About your application's environment") {
-    usage "grace about"
+    usage 'grace about'
 }
 
 try {
@@ -106,7 +106,7 @@ String getOsVersion() {
 
 CodeGenConfig getApplicationConfig() {
     CodeGenConfig config = new CodeGenConfig()
-    File applicationYml = new File(BuildSettings.RESOURCES_DIR, "application.yml")
+    File applicationYml = new File(BuildSettings.RESOURCES_DIR, 'application.yml')
     if (applicationYml.exists()) {
         config.loadYml(applicationYml)
     }

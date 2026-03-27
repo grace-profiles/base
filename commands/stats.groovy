@@ -1,5 +1,5 @@
-description( "Prints statistics about the project" ) {
-    usage "grace stats"
+description('Prints statistics about the project') {
+    usage 'grace stats'
 }
 
 def EMPTY = /^\s*$/
@@ -26,27 +26,26 @@ def DEFAULT_LOC_MATCHER = { file ->
 
 // maps file path to
 def pathToInfo = [
-    [name: "Controllers",        path: "^app.controllers",             filetype: ["Controller.groovy"]],
-    [name: "URL Mappings",       path: "^app.controllers",             filetype: ["UrlMappings.groovy"]],
-    [name: "Interceptors",       path: "^app.controllers",             filetype: ["Interceptor.groovy"]],
-    [name: "Domain Classes",     path: "^app.domain",                  filetype: [".groovy"]],
-    [name: "Jobs",               path: "^app.job",                     filetype: [".groovy"]],
-    [name: "Services",           path: "^app.services",                filetype: ["Service.groovy"]],
-    [name: "Tag Libraries",      path: "^app.taglibs",                 filetype: ["TagLib.groovy"]],
-    [name: "Helpers",            path: "^src.main.groovy",             filetype: [".groovy", ".java"]],
-    [name: "Unit Tests",         path: "^src.test.groovy",             filetype: [".groovy", ".java"]],
-    [name: "Integration Tests",  path: "^src.integration-test.groovy", filetype: [".groovy", ".java"]],
-    [name: "Scripts",            path: "^src.main.scripts",            filetype: [".groovy"]],
+    [name: 'Controllers',        path: '^app.controllers',             filetype: ['Controller.groovy']],
+    [name: 'URL Mappings',       path: '^app.controllers',             filetype: ['UrlMappings.groovy']],
+    [name: 'Interceptors',       path: '^app.controllers',             filetype: ['Interceptor.groovy']],
+    [name: 'Domain Classes',     path: '^app.domain',                  filetype: ['.groovy']],
+    [name: 'Jobs',               path: '^app.job',                     filetype: ['.groovy']],
+    [name: 'Services',           path: '^app.services',                filetype: ['Service.groovy']],
+    [name: 'Tag Libraries',      path: '^app.taglibs',                 filetype: ['TagLib.groovy']],
+    [name: 'Helpers',            path: '^src.main.groovy',             filetype: ['.groovy', '.java']],
+    [name: 'Unit Tests',         path: '^src.test.groovy',             filetype: ['.groovy', '.java']],
+    [name: 'Integration Tests',  path: '^src.integration-test.groovy', filetype: ['.groovy', '.java']],
+    [name: 'Scripts',            path: '^src.main.scripts',            filetype: ['.groovy']],
 ]
 
 // event("StatsStart", [pathToInfo])
 
 def baseDirFile = baseDir
-def baseDirPathLength = baseDirFile.path.size()+1
+def baseDirPathLength = baseDirFile.path.size() + 1
 baseDirFile.eachFileRecurse { file ->
     def match = pathToInfo.find { info ->
-        file.path.substring(baseDirPathLength) =~ info.path &&
-        info.filetype.any{ s -> file.path.endsWith(s) }
+        file.path.substring(baseDirPathLength) =~ info.path && info.filetype.any { s -> file.path.endsWith(s) }
     }
     if (match && file.isFile()) {
         match.filecount = match.filecount ? match.filecount+1 : 1
@@ -69,17 +68,17 @@ output.println '''
 
 pathToInfo.each { info ->
     if (info.filecount) {
-        output.println "| " +
-            info.name.padRight(20," ") + " | " +
-            info.filecount.toString().padLeft(5, " ") + " | " +
-            info.loc.toString().padLeft(5," ") + " | "
+        output.println '| ' +
+            info.name.padRight(20, ' ') + ' | ' +
+            info.filecount.toString().padLeft(5, ' ') + ' | ' +
+            info.loc.toString().padLeft(5, ' ') + ' | '
         totalFiles += info.filecount
         totalLOC += info.loc
     }
 }
 
-output.println "+----------------------+-------+-------+"
-output.println "| Totals               | " + totalFiles.toString().padLeft(5, " ") + " | " + totalLOC.toString().padLeft(5, " ") + " | "
-output.println "+----------------------+-------+-------+\n"
+output.println '+----------------------+-------+-------+'
+output.println '| Totals               | ' + totalFiles.toString().padLeft(5, ' ') + ' | ' + totalLOC.toString().padLeft(5, ' ') + ' | '
+output.println '+----------------------+-------+-------+\n'
 
 println sw.toString()

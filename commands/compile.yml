@@ -1,8 +1,8 @@
 description: Compiles a Grace application
 minArguments: 0
 usage: |
- compile
+  compile
 steps:
- - command: gradle
-   tasks:
-     - classes
+  - command: gradle
+    tasks:
+      - classes

@@ -1,8 +1,8 @@
 description: Packages a Grace application
 minArguments: 0
 usage: |
- package
+  package
 steps:
- - command: gradle
-   tasks:
-     - assemble
+  - command: gradle
+    tasks:
+      - assemble
