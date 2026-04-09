@@ -1,6 +1,7 @@
 @artifact.package@
-import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
+
+import grails.testing.gorm.DomainUnitTest
 
 class @artifact.name@Spec extends Specification implements DomainUnitTest<@artifact.name@> {
 
@@ -12,7 +13,7 @@ class @artifact.name@Spec extends Specification implements DomainUnitTest<@artif
 
     void 'test something'() {
         expect: 'fix me'
-            true == false
+        true == false
     }
 
 }

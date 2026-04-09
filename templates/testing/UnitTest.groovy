@@ -1,6 +1,7 @@
 @artifact.package@
-import org.grails.testing.GrailsUnitTest
 import spock.lang.Specification
+
+import org.grails.testing.GrailsUnitTest
 
 class @artifact.name@Spec extends Specification implements GrailsUnitTest {
 
@@ -12,7 +13,7 @@ class @artifact.name@Spec extends Specification implements GrailsUnitTest {
 
     void 'test something'() {
         expect: 'fix me'
-            true == false
+        true == false
     }
 
 }

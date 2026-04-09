@@ -1,6 +1,7 @@
 @artifact.package@
-import org.grails.testing.GrailsUnitTest
 import spock.lang.Specification
+
+import org.grails.testing.GrailsUnitTest
 
 class @artifact.name@Spec extends Specification implements GrailsUnitTest {
 

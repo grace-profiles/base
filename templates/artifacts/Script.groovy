@@ -1,3 +1,3 @@
-description "Example description", "grace script.groovy"
+description 'Example description', 'grace script.groovy'
 
-println "Example Script"
+println 'Example Script'
