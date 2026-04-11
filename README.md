@@ -5,7 +5,7 @@
 [![Grace on X](https://img.shields.io/twitter/follow/graceframework?style=social)](https://x.com/graceframework)
 
 [![Groovy Version](https://img.shields.io/badge/Groovy-4.0.30-blue?style=flat&color=4298b8)](https://groovy-lang.org/releasenotes/groovy-4.0.html)
-[![Grace Version](https://img.shields.io/badge/Grace-2024.0.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.0.0-RC1)
+[![Grace Version](https://img.shields.io/badge/Grace-2024.1.0-blue?style=flat&color=f49b06)](https://github.com/graceframework/grace-framework/releases/tag/v2024.1.0-M2)
 
 # Grace Base Profile
 
@@ -17,6 +17,7 @@ To make it easier for users to use and upgrade, Profile adopts a version policy 
 
 | Profile Version | Grace Version |
 |-----------------|---------------|
+| 2024.1.x        | 2024.1.x      |
 | 2024.0.x        | 2024.0.x      |
 | 2023.3.x        | 2023.3.x      |
 | 2023.2.x        | 2023.2.x      |
@@ -28,7 +29,7 @@ To make it easier for users to use and upgrade, Profile adopts a version policy 
 
 ## Ducumentation
 
-* [2024.0.x](https://profiles.graceframework.org/base/2024.0.x/)
+* [2024.1.x](https://profiles.graceframework.org/base/2024.1.x/)
 
 ## Links
 
