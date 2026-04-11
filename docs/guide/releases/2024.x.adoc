@@ -1,3 +1,27 @@
+=== 2024.1.0-M1
+
+link:{github}/releases/tag/v2024.1.0-M1[release notes]
+
+🛠 Improvements
+
+* Add release notes for 2024.1.0-M1
+* Update README
+* Update doc.properties - switch to 2024.1.x branch
+* Update profile.yml: using double quote link:{github}/issues/117[#117]
+* Code formatting for all templates link:{github}/issues/116[#116]
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.1.0-M2 link:{github}/issues/115[#115]
+
+⚙️ Tasks
+
+* Release v2024.1.0-M1
+* Next development version: 2024.1.0-SNAPSHOT
+* Upgrade to actions/checkout@v6 link:{github}/issues/112[#112]
+* Upgrade to actions/setup-java@v5 link:{github}/issues/113[#113]
+* Upgrade to gradle/actions/setup-gradle@v5.0.2 link:{github}/issues/114[#114]
+
 === 2024.0.0
 
 link:{github}/releases/tag/v2024.0.0[release notes]
@@ -31,9 +55,9 @@ link:{github}/releases/tag/v2024.0.0-RC1[release notes]
 🛠 Improvements
 
 * Update profile.yml - Code Formating
-* Remove `management.endpoints` settings in the application.yml 
-* Update command `stats`: change `app.taglib` to `app.taglibs` 
-* Fix the github issue link 
+* Remove `management.endpoints` settings in the application.yml
+* Update command `stats`: change `app.taglib` to `app.taglibs`
+* Fix the github issue link
 * Update README - Update badge version of Grace badge
 * Add release notes for 2024.0.0-RC1
 * Update copyright in doc.properties
