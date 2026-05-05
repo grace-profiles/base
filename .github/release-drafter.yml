@@ -1,5 +1,23 @@
-name-template: $RESOLVED_VERSION
+name-template: v$RESOLVED_VERSION
 tag-template: v$RESOLVED_VERSION
+categories:
+  - title: ⭐️ Features
+    labels:
+      - "feature"
+  - title: 🐞 Bug Fixes
+    labels:
+      - "bug"
+  - title: 🛠 Improvements
+    labels:
+      - "enhancement"
+  - title: 🛠 Dependency upgrades
+    labels:
+      - "dependency upgrade"
+  - title: ⚙️ Build/CI
+    labels:
+      - "ci"
+      - "task"
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 version-resolver:
   major:
     labels:
@@ -11,22 +29,6 @@ version-resolver:
     labels:
       - 'type: patch'
   default: patch
-categories:
-  - title: 🚀 Features
-    labels:
-      - "type: enhancement"
-      - "type: new feature"
-      - "type: major"
-  - title: 🚀 Bug Fixes/Improvements
-    labels:
-      - "type: improvement"
-      - "type: bug"
-      - "type: minor"
-  - title: 🛠 Dependency upgrades
-    labels:
-      - "type: dependency upgrade"
-      - "dependencies"
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
   ## What's Changed
 
