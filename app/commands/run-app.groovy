@@ -34,7 +34,7 @@ try {
         arguments << "-D${key}=$value".toString()
     }
 
-    arguments << "-Dgrails.run.active=true"
+    arguments << "-Dgrails.run.active=true" << "--no-continue"
 
     if (port) {
         arguments << "-Dgrails.server.port=$port"
@@ -125,6 +125,10 @@ try {
 
 }
 catch (org.gradle.tooling.BuildCancelledException ignore) {
+    console.updateStatus('Application stopped')
+    return true
+}
+catch (org.gradle.tooling.BuildActionFailureException ignore) {
     console.updateStatus('Application stopped')
     return true
 }

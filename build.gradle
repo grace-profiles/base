@@ -61,6 +61,19 @@ jar {
         "Implementation-Vendor": 'graceframework.org')
 }
 
+processProfileResources {
+    commandsDir = project.layout.projectDirectory.dir('app/commands')
+    featuresDir = project.layout.projectDirectory.dir('app/features')
+    skeletonDir = project.layout.projectDirectory.dir('src/main/skeleton')
+    templatesDir = project.layout.projectDirectory.dir('src/main/templates')
+}
+
+compileProfile {
+    source = project.layout.projectDirectory.dir('app/commands')
+    featuresDir = project.layout.projectDirectory.dir('app/features')
+    templatesDir = project.layout.projectDirectory.dir('src/main/templates')
+}
+
 tasks.register('docs') {
     dependsOn publishGuide
 }
