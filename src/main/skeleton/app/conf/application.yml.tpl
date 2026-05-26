@@ -21,9 +21,7 @@ spring:
                 - 'logback.groovy'
                 - '*.properties'<% if (project.hasFeature('hibernate')) { %>
     jpa:
-        open-in-view: false<% } %><% if (project.hasFeature('database-migration')) { %>
-    liquibase:
-        enabled: false<% } %>
+        open-in-view: false<% } %>
 management:
     endpoints:
         enabled-by-default: true
