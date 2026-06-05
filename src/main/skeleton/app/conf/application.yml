@@ -22,5 +22,3 @@ spring:
                 - '*.properties'
     jpa:
         open-in-view: false
-    liquibase:
-        enabled: false
