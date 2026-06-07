@@ -4,6 +4,7 @@ description:
   - argument: Plugin Name
     description: The name of the Plugin
   - flag: force
+    type: boolean
     description: Whether to override existing files
 steps:
   - command: render

@@ -4,6 +4,7 @@ description:
   - argument: Command Name
     description: The name of the Command
   - flag: force
+    type: boolean
     description: Whether to override existing files
 steps:
   - command: render

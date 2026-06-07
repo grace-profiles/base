@@ -4,6 +4,7 @@ description:
   - argument: Domain Class Name
     description: The name of the Domain Class
   - flag: force
+    type: boolean
     description: Whether to override existing files
 steps:
   - command: render

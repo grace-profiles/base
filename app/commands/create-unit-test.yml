@@ -5,6 +5,7 @@ description:
   - argument: "Unit Test Name"
     description: "The name of the Unit Test"
   - flag: force
+    type: boolean
     description: Whether to override existing files
 steps:
   - command: render
