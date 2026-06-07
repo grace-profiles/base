@@ -6,7 +6,6 @@ hibernate:
         use_query_cache: false
 dataSource:
     pooled: true
-    jmxExport: true
     driverClassName: <% if (options['database'] == 'h2') { %>org.h2.Driver<% } else if (options['database'] == 'mysql') { %>com.mysql.cj.jdbc.Driver<% } else if (options['database'] == 'mariadb') { %>org.mariadb.jdbc.Driver<% } else if (options['database'] == 'postgresql') { %>org.postgresql.Driver<% } else if (options['database'] == 'sqlserver') { %>com.microsoft.sqlserver.jdbc.SQLServerDriver<% } else { %><% } %>
     username: <% if (options['database'] == 'h2') { %>sa<% } else if (options['database'] == 'mysql') { %>root<% } else if (options['database'] == 'mariadb') { %>root<% } else if (options['database'] == 'postgresql') { %>postgres<% } else { %>sa<% } %>
     password: <% if (options['database'] == 'h2') { %>''<% } else if (options['database'] == 'mysql') { %>''<% } else if (options['database'] == 'mariadb') { %>''<% } else if (options['database'] == 'postgresql') { %>'postgres'<% } else { %>''<% } %>
