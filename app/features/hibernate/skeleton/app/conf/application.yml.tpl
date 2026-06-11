@@ -23,21 +23,3 @@ environments:
         dataSource:
             dbCreate: none
             url: <% if (options['database'] == 'h2') { %>jdbc:h2:./@grace.codegen.projectSnakeCaseName@_prod;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE<% } else if (options['database'] == 'mariadb') { %>jdbc:mariadb://localhost:3306/@grace.codegen.projectSnakeCaseName@_prod<% } else if (options['database'] == 'mysql') { %>jdbc:mysql://localhost:3306/@grace.codegen.projectSnakeCaseName@_prod<% } else if (options['database'] == 'postgresql') { %>jdbc:postgresql://localhost:5432/@grace.codegen.projectSnakeCaseName@_prod<% } else if (options['database'] == 'sqlserver') { %>jdbc:sqlserver://localhost:1433/@grace.codegen.projectSnakeCaseName@_prod<% } else { %><% } %>
-            properties:
-                jmxEnabled: true
-                initialSize: 5
-                maxActive: 50
-                minIdle: 5
-                maxIdle: 25
-                maxWait: 10000
-                maxAge: 600000
-                timeBetweenEvictionRunsMillis: 5000
-                minEvictableIdleTimeMillis: 60000
-                validationQuery: SELECT 1
-                validationQueryTimeout: 3
-                validationInterval: 15000
-                testOnBorrow: true
-                testWhileIdle: true
-                testOnReturn: false
-                jdbcInterceptors: ConnectionState
-                defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
