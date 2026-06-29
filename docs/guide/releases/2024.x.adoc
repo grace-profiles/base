@@ -1,3 +1,25 @@
+=== 2024.2.0-M1
+
+link:{github}/releases/tag/v2024.2.0-M1[release notes]
+
+🛠 Improvements
+
+* Add release notes for 2024.2.0-M1
+* Update doc.properties - switch to 2024.2.x branch
+* Update README - Update versions of Grace and Groovy badges
+* Move Base's skeleton into the other inherited Profile's own skeleton link:{github}/issues/134[#134]
+
+🚀 Dependency Upgrades
+
+* Upgrade to Grace 2024.1.1 link:{github}/issues/133[#133]
+
+⚙️ Tasks
+
+* Release v2024.2.0-M1
+* Bump actions/checkout from 6 to 7
+* Update GitHub workflows - Switch to '2024.2.x'
+* Next development version: 2024.2.0-SNAPSHOT
+
 === 2024.1.0
 
 link:{github}/releases/tag/v2024.1.0[release notes]
