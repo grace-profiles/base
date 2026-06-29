@@ -1,7 +1,0 @@
-repositories {
-@buildRepositories@
-}
-
-dependencies {
-@buildDependencies@
-}

@@ -3,4 +3,4 @@ import org.apache.tools.ant.DirectoryScanner
 DirectoryScanner.removeDefaultExclude('**/.gitattributes')
 DirectoryScanner.removeDefaultExclude('**/.gitignore')
 
-rootProject.name="base"
+rootProject.name = "base"
